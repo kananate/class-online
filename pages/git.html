@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <link rel="icon" type="image/png" href="/ressources/logo-1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/75303112de.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />    
+    <link rel="stylesheet" href="/css/gt.css">    
+    <title>Git-Github</title>
+ 
+</head>
+<body>
+    <header>
+        <nav>
+            <p
+            class="logo">
+            <a href="/index.html">Retour  Accueil</a>
+           </p>
+            <img src="/ressources/git.png" alt="logo">
+        </nav>
+    </header>
+    <h2>Introduction</h2>
+    <p>Git is a version control system that allows developers to keep track of changes made to their code over time. It allows multiple people to work on the same codebase simultaneously and makes it easy to revert to previous versions of the code if something goes wrong.</p>
+    <p>GitHub is a website that provides hosting for Git repositories. It is a platform where developers can store their code, collaborate with others on open-source projects, and track issues and bugs. Developers can use GitHub to create their own repositories, or "repos," which are like folders for their code. They can also fork existing repos to make their own copies, and submit pull requests to propose changes to the original repo.</p>
+    <hr />
+    <h3 id="heading-version">Version</h3>
+    <p>To check the version of Git installed on your system, you can use the following command in your terminal or command prompt:</p>
+    <pre><code class="lang-plaintext">git --version
+    </code></pre>
+    <p>This will display the version number of Git currently installed on your system. For example, the output may look like this:</p>
+    <pre><code class="lang-plaintext">git version 2.39.2
+    </code></pre>
+    <p>This means that Git version 2.39.2 is currently installed on the system.</p>
+    <hr />
+    <h3 id="heading-installation">Installation</h3>
+    <p>To install Git on your system, you can follow these steps:</p>
+    <p><strong><em>Windows</em></strong></p>
+    <ol>
+    <li><p>Go to the Git website: <a target="_blank" href="https://git-scm.com/downloads"><strong><a href="https://git-scm.com/downloads" class="autolinkedURL autolinkedURL-url" target="_blank">git-scm.com/downloads</a></strong></a></p>
+    </li>
+    <li><p>Click the Windows link to download the installer.</p>
+    </li>
+    <li><p>Once the installer is downloaded, double-click it to launch the installer.</p>
+    </li>
+    <li><p>Follow the prompts in the installer to complete the installation process.</p>
+    </li>
+    <li><p>After installation is complete, open a command prompt or Git Bash terminal and run <code>git --version</code> to verify that Git is installed.</p>
+    </li>
+    </ol>
+    <p><strong><em>Mac OS</em></strong></p>
+    <ol>
+    <li><p>Install Xcode Command Line Tools. Open the Terminal app and run the following command: <code>xcode-select --install</code>.</p>
+    </li>
+    <li><p>Install Homebrew package manager by running this command: <code>/bin/bash -c "$(curl -fsSL</code> <a target="_blank" href="https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"><code>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh</code></a><code>)"</code></p>
+    </li>
+    <li><p>Use Homebrew to install Git: <code>brew install git</code>.</p>
+    </li>
+    <li><p>After installation is complete, open a Terminal app and run <code>git --version</code> to verify that Git is installed.</p>
+    </li>
+    </ol>
+    <p><strong><em>Linux</em></strong></p>
+    <p>Git is likely available in your distribution's default package repositories, so you can use your package manager to install it. For example, on Ubuntu or Debian-based systems, you can run the following command:</p>
+    <pre><code class="lang-plaintext">sudo apt-get update
+    sudo apt-get install git
+    </code></pre>
+    <p>After installation is complete, run <code>git --version</code> to verify that Git is installed.</p>
+    <hr />
+    <h3 id="heading-configuration">Configuration</h3>
+    <p>To configure Git locally, you need to set up a few basic properties that identify you as the author of the changes you make in Git. Here are the steps to configure Git locally:</p>
+    <ol>
+    <li><p>Set your username: Use the following command to set your Git username:</p>
+    <pre><code class="lang-plaintext"> git config --global user.name "Your Name"
+    </code></pre>
+    </li>
+    <li><p>Set your email address: Use the following command to set your email address:</p>
+    <pre><code class="lang-plaintext"> git config --global user.email "your-email@example.com"
+    </code></pre>
+    </li>
+    <li><p>Set your preferred text editor: You can set your preferred text editor for Git with the following command:</p>
+    <pre><code class="lang-plaintext"> git config --global core.editor "editor-of-your-choice"
+    </code></pre>
+    <p> For example, to set your preferred text editor to Nano, use the following command:</p>
+    <pre><code class="lang-plaintext"> git config --global core.editor nano
+    </code></pre>
+    </li>
+    <li><p>Check your configuration: You can check your Git configuration at any time by using the following command:</p>
+    <pre><code class="lang-plaintext"> git config --list
+    </code></pre>
+    </li>
+    </ol>
+    <p>This will display your Git configuration properties and their values. You can change your Git configuration properties at any time by running the above commands with different values.</p>
+    <hr />
+    <h3 id="heading-how-to-start-git-repository">How To Start Git Repository</h3>
+    <p><img data-zoomable="true" loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1677063850249/ef309975-56ad-4a9b-b991-d24983598192.png?auto=compress,format&format=webp" alt class="image--center mx-auto" /></p>
+    <p>Starting a Git repository and committing changes involves the following steps:</p>
+    <ol>
+    <li><p>Initialize a Git repository in an existing directory:</p>
+    <pre><code class="lang-plaintext"> cd &lt;directory&gt;
+     git init
+    </code></pre>
+    </li>
+    </ol>
+    <p>Replace <code>&lt;directory&gt;</code> with the name of the directory that you want to turn into a Git repository.</p>
+    <ol>
+    <li><p>Stage and commit your changes:</p>
+    <pre><code class="lang-plaintext"> git add &lt;file&gt;
+     git commit -m "Your commit message"
+    </code></pre>
+    </li>
+    </ol>
+    <p>Replace <code>&lt;file&gt;</code> with the name of the file you want to stage and replace <code>"Your commit message"</code> with a meaningful message describing your changes.</p>
+    <ol>
+    <li><p>Push the changes to the remote repository using the <code>git push</code> command:</p>
+    <pre><code class="lang-plaintext"> git push origin &lt;branch&gt;
+    </code></pre>
+    <p> Replace <code>&lt;branch&gt;</code> with the name of the branch you want to push the changes to. If you're pushing to the <code>main</code> branch, you can use <code>main</code> instead of <code>&lt;branch&gt;</code>.</p>
+    </li>
+    </ol>
+    <p>Here's a more detailed explanation:</p>
+    <ol>
+    <li><p>Initializing a Git repository: Use the <code>git init</code> command in the terminal (or Git Bash on Windows) to turn an existing directory into a Git repository. This will create a new <code>.git</code> subdirectory in the directory, which will store all the information about the repository, such as its commit history and configuration.</p>
+    </li>
+    <li><p>Adding and committing changes: Use the <code>git add</code> command to stage changes in your files, and the <code>git commit</code> command to commit the changes to the repository's history. The <code>-m</code> option allows you to specify a commit message that describes the changes.</p>
+    </li>
+    <li><p>This will upload your changes to the remote repository, making them available for others to access. Note that you may need to enter your username and password for the hosting service if you're pushing changes to a repository that you don't own.</p>
+    </li>
+    </ol>
+    <p>Note that once you've committed changes to a Git repository, they are stored in the repository's history and can be retrieved at any time using the <code>git log</code> command. This makes it easy to revert to previous versions of the code if necessary.</p>
+    <hr />
+    <h3 id="heading-common-git-commands"><strong>Common Git Commands</strong></h3>
+    <p><code>git init</code>: This command is used to initialize a new Git repository. It creates a new directory called .git, which contains all the necessary files for keeping track of the codebase. This command is typically used when you are starting a new project and want to use Git to track the changes.</p>
+    <p><code>git clone</code>: This command is used to create a copy of a remote repository on your local machine. It allows you to download a copy of a repository from a remote location and create a local copy of it. You can then make changes to the local copy and push them back to the remote repository.</p>
+    <p><code>git add</code>: This command is used to stage changes for commit. It tells Git that you want to include certain files in the next commit. You can use this command to add individual files or a group of files.</p>
+    <p><code>git commit</code>: This command is used to save changes to the repository. It creates a new "commit" that includes all the changes that have been staged with the git add command. Each commit includes a message that describes the changes that were made.</p>
+    <p><code>git status</code>: This command is used to check the current status of the repository. It shows which files have been modified, which files have been staged for commit, and which branch you are currently on. This command is useful for getting a quick overview of the changes that have been made to the codebase.</p>
+    <p><code>git diff</code>: This command is used to show the difference between the current version of a file and the last committed version. It shows the lines that have been added or removed. This command is useful for reviewing changes before committing them.</p>
+    <p><code>git log</code>: This command is used to display the commit history of a repository. It shows a list of all the commits that have been made, along with the author, date, and commit message. This command is useful for reviewing the history of a repository and understanding how it has evolved over time.</p>
+    <p><code>git branch</code>: This command is used to create, list, or delete branches in a repository. Branches allow multiple developers to work on the same repository simultaneously without interfering with each other. (The <code>git branch -M main</code> command renames the current branch to "main". The <code>-M</code> option stands for "move/rename" and is used to move or rename a branch in Git.)</p>
+    <p><code>git merge</code>: This command is used to merge changes from one branch to another. It allows developers to combine the changes made in different branches and integrate them into the main branch.</p>
+    <p><code>git pull</code>: This command is used to retrieve changes from a remote repository and merge them with the local copy. It fetches changes from the remote repository and then automatically merges them with the current branch.</p>
+    <p><code>git push</code>: This command is used to upload changes to a remote repository. It sends changes made in the local repository to the remote repository, updating it with the new commits. (The <code>git push -u origin main</code> command pushes the "main" branch to the remote repository named "origin". The <code>-u</code> option sets the upstream branch for the current branch.)</p>
+    <p><img data-zoomable="true" loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1677063205901/fc16b64e-d86d-4a91-b68c-71da93395449.png?auto=compress,format&format=webp" alt class="image--center mx-auto" /></p>
+    <p>These are some of the most commonly used Git commands, but there are many other useful commands that you can use to manage your codebase and collaborate with others.</p>
+    <hr />
+    <h2 id="heading-git-lifecycle">Git Lifecycle</h2>
+    <p>The Git file lifecycle refers to the series of stages that a file in a Git repository goes through as you make changes and commit them.</p>
+    <p><img data-zoomable="true" loading="lazy" src="/ressources/git_cycle.png" alt class="image--center mx-auto" /></p>
+    <p>Here's a simple explanation of the Git file lifecycle:</p>
+    <ul>
+    <li><p><strong>Untracked:</strong> When you first create a file in your Git repository, it is considered untracked. This means that Git does not yet know about the file, and it will not be included in any commits until you add it to the repository.</p>
+    </li>
+    <li><p><strong>Staged:</strong> To include a file in a Git commit, you need to stage it. Staging a file adds it to the list of files that will be included in the next commit. You can stage a file using the git add command.</p>
+    </li>
+    <li><p><strong>Committed:</strong> Once you've staged a file, you can commit it to the repository. A commit is a snapshot of your codebase, including all the changes you've made in the staged files. You can make a commit using the git commit command.</p>
+    </li>
+    <li><p><strong>Modified:</strong> After a file has been committed, you can continue to make changes to it. When you make changes to a file, it is considered modified.</p>
+    </li>
+    <li><p><strong>Staged (again):</strong> To include the new changes in your next commit, you'll need to stage the modified file again. This is because Git only tracks changes that have been staged, not changes made directly to the file.</p>
+    </li>
+    <li><p><strong>Committed (again):</strong> Once you've staged the modified file, you can make a new commit to save the changes to the repository.</p>
+    </li>
+    <li><p><strong>Tracked:</strong> When a file has been committed to the repository, it is considered tracked. Tracked files are part of your codebase's history, and changes to them will be recorded in future commits.</p>
+    </li>
+    </ul>
+    <p>The Git file lifecycle is a key part of the Git version control process. By tracking the changes you make to your code and preserving them in commits, Git provides a complete history of your codebase, making it easy to revert changes or compare different versions of your code.</p>
+    <hr />
+    <h2 id="heading-other-important-commands">Other Important Commands</h2>
+    <h3 id="heading-git-diff">Git Diff</h3>
+    <p>The <code>git diff</code> command is used to show the differences between two commits, or between the working directory and the most recent commit. Here are some examples of how you might use <code>git diff</code>:</p>
+    <ol>
+    <li><p><strong>Compare working directory and the most recent commit</strong>: To see the differences between the files in the working directory and the most recent commit, you can use the command <code>git diff</code>. This will show the changes that you have made but haven't committed yet.</p>
+    </li>
+    <li><p><strong>Compare two commits</strong>: To see the differences between two commits, you can use the command <code>git diff &lt;commit1&gt; &lt;commit2&gt;</code>. For example, <code>git diff HEAD~2 HEAD~1</code> will show the differences between the 2nd and 1st last commits.</p>
+    </li>
+    <li><p><strong>Compare branch and another branch</strong>: To see the differences between two branches, you can use the command <code>git diff &lt;branch1&gt; &lt;branch2&gt;</code>. For example, <code>git diff main feature-x</code> will show the differences between the main branch and feature-x branch.</p>
+    </li>
+    <li><p><strong>Compare with a tag</strong>: To see the differences between a commit and a tag, you can use the command <code>git diff &lt;tag&gt; &lt;commit&gt;</code>. For example, <code>git diff v1.0 main</code> will show the differences between the tag "v1.0" and the main branch.</p>
+    </li>
+    <li><p><strong>Viewing specific file</strong>: You can use <code>git diff &lt;file&gt;</code> to show the differences between a specific file in the working directory and the most recent commit. For example <code>git diff index.html</code> will show the differences between the index.html file in the working directory and the most recent commit.</p>
+    </li>
+    <li><p><strong>Color output</strong>: you can add the <code>--color-words</code> option to see the specific changes in the words instead of lines, for example <code>git diff --color-words</code></p>
+    </li>
+    </ol>
+    <p>It's important to note that <code>git diff</code> command shows the differences between the files, not the entire files. It can be a powerful tool for identifying and resolving conflicts, and for reviewing changes before committing them.</p>
+    <hr />
+    <h3 id="heading-git-stash">Git Stash</h3>
+    <p>Git stash is a feature in Git that allows you to temporarily save changes you have made in your current branch but are not ready to commit. This is useful when you need to switch to another branch to work on a different task, but don't want to commit the changes you have made in your current branch. Stashing your changes allows you to switch branches and work on the new task without losing the changes you made in your current branch. Later, you can apply the stashed changes back to your current branch or to a different branch.</p>
+    <p>Here is the basic command to use Git stash:</p>
+    <ol>
+    <li><p>To stash changes in your current branch, run the following command in your terminal or command line:</p>
+    <pre><code class="lang-plaintext"> git stash
+    </code></pre>
+    </li>
+    <li><p>To apply the latest stash, run the following command:</p>
+    <pre><code class="lang-plaintext"> git stash apply
+    </code></pre>
+    </li>
+    <li><p>To list all stashes, use the following command:</p>
+    <pre><code class="lang-plaintext"> git stash list
+    </code></pre>
+    </li>
+    <li><p>To apply a specific stash, use the stash@{index} syntax, where index is the stash number from the list. For example:</p>
+    <pre><code class="lang-plaintext"> git stash apply stash@{2}
+    </code></pre>
+    </li>
+    <li><p>To drop a stash, use the following command:</p>
+    <pre><code class="lang-plaintext"> git stash drop stash@{index}
+    </code></pre>
+    </li>
+    </ol>
+    <p>Note that stash@{0} is the latest stash, stash@{1} is the one before it, and so on. The stash commands are very flexible, and there are many options and variations available. Consult the Git documentation for more information on using Git stash.</p>
+    <p>Here are some additional Git stash commands:</p>
+    <ol>
+    <li><p><code>git stash show</code>: Display the changes in a stash.</p>
+    </li>
+    <li><p><code>git stash pop</code>: Apply a stash and remove it from the stash list.</p>
+    </li>
+    <li><p><code>git stash branch &lt;branch-name&gt;</code>: Create a new branch from the latest stash and apply the stash changes to the new branch.</p>
+    </li>
+    <li><p><code>git stash clear</code>: Remove all stashes.</p>
+    </li>
+    <li><p><code>git stash drop &lt;stash-name&gt;</code>: Remove a specific stash from the stash list.</p>
+    </li>
+    <li><p><code>git stash apply --index</code>: Apply the stash and try to reapply the index changes as well.</p>
+    </li>
+    <li><p><code>git stash create</code>: Create a stash with a descriptive message.</p>
+    </li>
+    </ol>
+    <p>These commands provide additional options and ways to interact with Git stash, so you can choose the one that fits your needs best. As always, refer to the Git documentation for more information and details on using Git stash.</p>
+    <hr />
+    <h3 id="heading-git-restore">Git Restore</h3>
+    <p>Git restore is a command in Git that allows you to revert changes in your codebase to a previous version. Here's a simple explanation:</p>
+    <p>Imagine you've made some changes to your code, but later realize that those changes were a mistake. You want to undo those changes and restore your code to a previous version.</p>
+    <p>This is where Git restore comes in. With the <code>git restore</code> command, you can revert changes in your code to a previous version, effectively undoing the changes you made.</p>
+    <p>To use <code>git restore</code>, you'll need to specify the file or files you want to restore, and the commit that you want to restore them to. For example,</p>
+    <ul>
+    <li><p>To restore the contents of a file in the working tree to the version in the most recent commit, use:</p>
+    <pre><code class="lang-plaintext">  git restore file.txt
+    </code></pre>
+    </li>
+    <li><p>To unstage changes in the index, use:</p>
+    <pre><code class="lang-plaintext">  git restore --staged &lt;file&gt;
+    </code></pre>
+    <p>  <code>--staged</code> allows you to restore the contents in the index.</p>
+    </li>
+    <li><p>To restore the contents of a file to a specific version, use:</p>
+    <pre><code class="lang-plaintext">  git restore --source=&lt;commit&gt; &lt;file&gt;
+    </code></pre>
+    <p>  <code>--source</code> allows you to specify a different version to restore the contents from (default is <code>HEAD</code>). You can specify a commit hash, tag, or relative reference (e.g. <code>HEAD~1</code> for the previous commit).</p>
+    </li>
+    </ul>
+    <p>It's important to note that when you restore a file, Git does not delete the changes you made. Instead, it creates a new commit that reverts the changes, allowing you to continue working on your codebase with the previous version of the file.</p>
+    <p>Git restore is a powerful feature that allows you to undo changes and restore previous versions of your code, making it an essential part of your Git workflow.</p>
+    <hr />
+    <h2 id="heading-git-branches">Git Branches</h2>
+    <h3 id="heading-introduction-1">Introduction</h3>
+    <p>Branching in Git is a powerful feature that allows developers to work on multiple versions of a codebase simultaneously. It allows developers to create separate branches for different features, bug fixes, or experiments, and then merge them back into the main branch when they are ready.</p>
+    <p>Here is a more detailed explanation of how branching works in Git:</p>
+    <ol>
+    <li><p><strong>Creating a new branch</strong>: To create a new branch, developers use the <code>git branch</code> command, followed by the name of the new branch. For example, <code>git branch feature-x</code> will create a new branch called "feature-x". The new branch is created as a copy of the current branch, which is usually the "master" branch.</p>
+    </li>
+    <li><p><strong>Switching to a different branch</strong>: Once a new branch has been created, developers can switch to it using the <code>git checkout</code> command, followed by the name of the branch. For example, <code>git checkout feature-x</code> will switch to the "feature-x" branch. When developers switch to a different branch, their local copy of the codebase is updated to reflect the state of the branch.</p>
+    </li>
+    <li><p><strong>Making changes</strong>: Once on a different branch, developers can make changes to the codebase without affecting the main version of the code or other branches. They can add, modify, or delete files, and then commit the changes using the <code>git commit</code> command.</p>
+    </li>
+    <li><p><strong>Merging changes</strong>: When a feature or bug fix is complete, developers can merge the changes back into the main branch. To do this, they switch back to the main branch using the <code>git checkout</code> command, and then use the <code>git merge</code> command to merge the changes from the feature branch.</p>
+    </li>
+    <li><p><strong>Deleting a branch</strong>: After merging the changes from a branch back into the main branch, developers can delete the branch using the <code>git branch -d &lt;branch_name&gt;</code> command.</p>
+    </li>
+    <li><p><strong>Multiple branches</strong>: Developers can create multiple branches, work on them simultaneously and merge them to the main branch.</p>
+    </li>
+    </ol>
+    <p>It's worth noting that Git allows for a non-linear workflow, which means that branches can be merged back into the main branch in any order. This allows for more flexibility and can make it easier to manage large and complex codebases.</p>
+    <p><img data-zoomable="true" loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1677062202226/310bcca4-aba1-4ef9-a2a5-774efe239ce0.png?auto=compress,format&format=webp" alt class="image--center mx-auto" /></p>
+    <p>Branching is a powerful feature of Git that allows for a flexible and organized development workflow. It allows developers to work on multiple versions of a codebase simultaneously and easily merge changes back into the main branch when they are ready.</p>
+    <hr />
+    <h3 id="heading-naming-convention">Naming Convention</h3>
+    <p>When naming branches in Git, it's important to choose a name that accurately represents the purpose or changes made in that branch. Here are a few tips for naming branches:</p>
+    <ol>
+    <li><p>Use descriptive names: A good branch name should provide clear information about the changes made in that branch. Use meaningful names like "feature-login-page" or "fix-image-resizing-issue".</p>
+    </li>
+    <li><p>Use dashes or slashes to separate words: Use hyphens to separate words in a branch name, as it makes it easier to read. For example, instead of using "featureloginpage", use "feature-login-page".</p>
+    </li>
+    <li><p>Avoid using special characters and spaces: Special characters can cause problems when working with Git and GitHub, so it's better to avoid them.</p>
+    </li>
+    <li><p>Start the name with a feature prefix: If the branch is for a new feature, start the name with "feature-". If it's for a bug fix, start the name with "fix-". This helps other developers quickly understand the purpose of the branch.</p>
+    </li>
+    <li><p>Keep branch names short: Long branch names can be difficult to read and can cause confusion. Try to keep branch names short and descriptive.</p>
+    </li>
+    </ol>
+    <hr />
+    <h3 id="heading-why-multiple-branches">Why Multiple Branches?</h3>
+    <p>Multiple branches in Git allow you to maintain multiple lines of development simultaneously within a single repository. This can be useful for a number of reasons:</p>
+    <ol>
+    <li><p>Isolation of changes: Branches allow you to isolate different changes from each other. This means that you can work on a new feature in one branch, while another branch is still maintaining the existing code.</p>
+    </li>
+    <li><p>Experimental development: Branches can be used to experiment with new ideas, features or bug fixes. You can easily switch back to the main branch if the experiment doesn't work out.</p>
+    </li>
+    <li><p>Collaboration: Branches allow multiple developers to work on different features or bugs simultaneously. When the work is finished, the branches can be merged back into the main branch.</p>
+    </li>
+    <li><p>Release management: Branches can be used to manage different versions of your codebase. For example, you can use a separate branch to manage the development of a new version while continuing to maintain an older version in the main branch.</p>
+    </li>
+    </ol>
+    <p>In summary, using multiple branches in Git provides a flexible and efficient way to manage changes to a codebase, and can help simplify collaboration and release management.</p>
+    <hr />
+    <h3 id="heading-git-switch">Git Switch</h3>
+    <p><code>git switch</code> is a command that allows you to switch to another branch in a Git repository. It is an alias for the <code>git checkout</code> command and provides a more user-friendly way to switch branches. The basic syntax for <code>git switch</code> is:</p>
+    <pre><code class="lang-plaintext">git switch &lt;branch&gt;
+    </code></pre>
+    <p>where <code>&lt;branch&gt;</code> is the name of the branch you want to switch to. For example, to switch to the <code>main</code> branch, you would run:</p>
+    <pre><code class="lang-plaintext">git switch main
+    </code></pre>
+    <p>This command switches your current branch to the <code>main</code> branch and updates your working directory to reflect the latest version of that branch. After switching to a new branch, you can make changes, stage them, and commit them just as you would with any other branch.</p>
+    <p>Note that <code>git switch</code> was introduced in Git version 2.23 and is available in more recent versions of Git. If you're using an older version of Git, you should use the <code>git checkout</code> command instead.</p>
+    <hr />
+    <h3 id="heading-merge-conflict">Merge Conflict</h3>
+    <p>A Git merge conflict occurs when two branches have made changes to the same lines in a file, and Git is unable to automatically resolve the differences. This happens when you try to merge one branch into another and the same lines have been modified in both branches.</p>
+    <p>For example, let's say you have a <code>main</code> branch and a <code>feature</code> branch. You've been working on the <code>feature</code> branch, and you've made some changes to a file called <a target="_blank" href="http://main.py"><code>main.py</code></a>. Meanwhile, another developer has been working on the <code>main</code> branch, and they've also made some changes to <a target="_blank" href="http://main.py"><code>main.py</code></a>. When you try to merge the <code>feature</code> branch into <code>main</code>, Git will detect that the same lines in <a target="_blank" href="http://main.py"><code>main.py</code></a> have been modified in both branches, and it won't know which changes to keep.</p>
+    <p>When a merge conflict occurs, Git will mark the conflicting lines in the file with special markers that show the changes from each branch. You will need to manually resolve the conflict by deciding which changes to keep, or by combining the changes in a way that makes sense.</p>
+    <p>To resolve the merge conflict, you can use a Git client that has a built-in merge tool, such as GitKraken, Sourcetree, and others. These tools allow you to visually compare the changes and choose which ones to keep. Alternatively, you can also resolve the conflict using command line.</p>
+    <p>Once the conflicts are resolved and the changes are made, you will need to commit the changes to finalize the merge.</p>
+    <p>It's important to note that merge conflicts can be avoided by following a consistent branching strategy, such as using feature branches and pull requests, and by regularly merging changes from the main branch into feature branches. This way, you will minimize the chances of multiple people working on the same files at the same time and creating conflicts.</p>
+    <h3 id="heading-resolve-merge-conflicts">Resolve Merge Conflicts</h3>
+    <p>Here are the steps to resolve a merge conflict in Git:</p>
+    <ol>
+    <li><p><strong>Identify the conflict</strong>: When you try to merge one branch into another and a conflict occurs, Git will mark the conflicting lines in the file with special markers. These markers will show the changes from each branch and will look something like this:</p>
+    <pre><code class="lang-plaintext"> &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+     ...content from the current branch...
+     =======
+     ...content from the other branch...
+     &gt;&gt;&gt;&gt;&gt;&gt;&gt; &lt;other_branch&gt;
+    </code></pre>
+    </li>
+    <li><p><strong>Decide which changes to keep</strong>: Review the conflicting changes and decide which ones you want to keep. You can use a Git client with a built-in merge tool, or edit the files directly in a text editor.</p>
+    </li>
+    <li><p><strong>Remove the conflict markers</strong>: Once you've decided which changes to keep, remove the conflict markers and any other unnecessary lines from the file.</p>
+    </li>
+    <li><p><strong>Add the modified files</strong>: Use the command <code>git add</code> to stage the modified files. This tells Git that you've resolved the conflicts and the files are ready to be committed.</p>
+    </li>
+    <li><p><strong>Commit the changes</strong>: Use the command <code>git commit</code> to commit the changes and finalize the merge. It's important to write a clear and concise commit message that describes the changes you've made.</p>
+    </li>
+    <li><p><strong>Push the changes</strong>: If you're working on a remote repository, use the command <code>git push</code> to upload the changes to the remote repository.</p>
+    </li>
+    </ol>
+    <p>It's important to note that resolving merge conflicts can be a bit tricky, and it may require some experimentation to get the hang of it. And it's always a good idea to communicate with the other developers on the team and coordinate your work to minimize the chances of conflicts happening in the first place.</p>
+    <hr />
+    <h3 id="heading-pull-before-you-push">Pull Before You Push</h3>
+    <p>In Git, it is generally recommended to always run <code>git pull</code> before running <code>git push</code> if you are working in a shared repository with other contributors.</p>
+    <p>Here's why:</p>
+    <ol>
+    <li><p><code>git pull</code> updates your local repository with any changes that have been made on the remote repository since your last update. This ensures that you are working with the latest code and that your local changes will be applied cleanly to the current state of the repository.</p>
+    </li>
+    <li><p>Running <code>git push</code> without first running <code>git pull</code> can result in conflicts if other contributors have made changes to the same files you have changed. This can cause errors or make it more difficult to merge changes later on.</p>
+    </li>
+    <li><p>Pulling before pushing also helps to keep the repository history clean and organized, as it ensures that each commit is based on the latest version of the code.</p>
+    </li>
+    </ol>
+    <p>So, to avoid conflicts and keep your repository in sync with the latest changes, it's generally a good practice to always run <code>git pull</code> before you run <code>git push</code>.</p>
+    <hr />
+    <h3 id="heading-combined-commands">Combined Commands</h3>
+    <ol>
+    <li><p>Stage &amp; Commit: <code>git commit -a -m "message"</code></p>
+    </li>
+    <li><p>Create Branch &amp; Checkout: <code>git checkout -b branchname</code></p>
+    </li>
+    </ol>
+    <hr />
+    <h3 id="heading-git-rebase">Git Rebase</h3>
+    <p><code>git rebase</code> is a Git command that allows you to reapply a series of commits from one branch onto another branch. It works by reapplying each commit from the source branch one by one onto the destination branch. This can be used to integrate changes from one branch into another, to clean up a messy commit history, or to simplify a complex branching structure.</p>
+    <p>Here's a detailed example that demonstrates the use of <code>git rebase</code>:</p>
+    <p>Suppose you have a Git repository with a <code>main</code> branch and you've created a <code>feature</code> branch to implement a new feature. While working on the <code>feature</code> branch, you've made several commits that have added new code to the project. Now you want to integrate your changes from the <code>feature</code> branch into the <code>main</code> branch.</p>
+    <p>Here are the steps to do that using <code>git rebase</code>:</p>
+    <ol>
+    <li>Check out the <code>feature</code> branch:</li>
+    </ol>
+    <pre><code class="lang-plaintext">git checkout feature
+    </code></pre>
+    <ol>
+    <li>Rebase the <code>feature</code> branch onto the <code>main</code> branch:</li>
+    </ol>
+    <pre><code class="lang-plaintext">git rebase main
+    </code></pre>
+    <p>This command reapplies each commit from the <code>feature</code> branch onto the <code>main</code> branch, one by one. Git will automatically merge each commit into the <code>main</code> branch, trying to resolve any conflicts that may arise. If a conflict occurs, you will need to resolve it manually and then continue the rebase by running <code>git rebase --continue</code>.</p>
+    <ol>
+    <li>Once the rebase is complete, switch back to the <code>main</code> branch:</li>
+    </ol>
+    <pre><code class="lang-plaintext">git checkout main
+    </code></pre>
+    <ol>
+    <li>Merge the <code>feature</code> branch into the <code>main</code> branch:</li>
+    </ol>
+    <pre><code class="lang-plaintext">git rebase feature
+    </code></pre>
+    <p>This will create a new merge commit that combines the changes from the <code>feature</code> branch into the <code>main</code> branch.</p>
+    <p>With these steps, you've successfully integrated the changes from the <code>feature</code> branch into the <code>main</code> branch using <code>git rebase</code>. This process can be useful for cleaning up a messy commit history, integrating changes from one branch into another, or simplifying a complex branching structure. However, it's important to keep in mind that rebasing can rewrite history, so it should be used with caution, especially if the branch has been shared with other collaborators. In general, it's a good idea to use rebasing only in a private branch that has not been shared with others and to use merging instead when working with shared branches.</p>
+    <p>Note that rebasing can cause conflicts if the same lines of code have been modified in both branches. In this case, you will need to resolve the conflicts manually before continuing the rebase. Also, rebasing can rewrite history, so it should be used with caution, especially if the branch has been shared with other collaborators. In general, it is a good idea to use rebasing only in a private branch that has not been shared with others, and to use merging instead when working with shared branches.</p>
+    <hr />
+    <h3 id="heading-difference-between-merge-andamp-rebase">Difference Between Merge &amp; Rebase</h3>
+    <p><code>git rebase</code> and <code>git merge</code> are both Git commands that are used to integrate changes from one branch into another. The main difference between the two is how they integrate the changes.</p>
+    <p><code>git merge</code> combines changes by creating a new merge commit in the destination branch. This merge commit has two parents: the latest commit in the destination branch, and the latest commit in the source branch. The merge commit represents the combined state of both branches at the time of the merge.</p>
+    <p><code>git rebase</code>, on the other hand, reapplies the changes from the source branch onto the destination branch one by one, effectively "replaying" the source branch on top of the destination branch. The result is a linear history, with all the changes from the source branch appearing as if they were always part of the destination branch.</p>
+    <p>Here are a few key differences between <code>git rebase</code> and <code>git merge</code>:</p>
+    <ul>
+    <li><p>History: <code>git merge</code> creates a merge commit with two parents, while <code>git rebase</code> rewrites the history of the destination branch.</p>
+    </li>
+    <li><p>Conflict resolution: When conflicts arise during a merge, they are recorded in the merge commit. When conflicts arise during a rebase, they must be resolved before the rebase can continue.</p>
+    </li>
+    <li><p>Order of changes: <code>git merge</code> preserves the order of changes in both branches, while <code>git rebase</code> reorders the changes from the source branch to appear as if they were always part of the destination branch.</p>
+    </li>
+    <li><p>Use case: <code>git merge</code> is often used when working with shared branches, as it provides a clear record of the merging of changes from different branches. <code>git rebase</code> is typically used when working on a personal branch, to simplify the commit history and make it easier to integrate changes into other branches.</p>
+    </li>
+    </ul>
+    <p>It's important to choose the right command for your needs, as each has its own strengths and weaknesses. If you want to preserve the history of your changes, use <code>git merge</code>. If you want to clean up your commit history and simplify your branching structure, use <code>git rebase</code>.</p>
+    <hr />
+    <h2 id="heading-git-files">Git Files</h2>
+    <h3 id="heading-git-ignore-file">Git Ignore File</h3>
+    <p>To ignore a file in Git, you need to create a <code>.gitignore</code> file in the root of your repository. This file is used to specify files and directories that Git should ignore.</p>
+    <p>Here are the steps to ignore a file in Git:</p>
+    <ol>
+    <li><p><strong>Create a .gitignore file:</strong> If a .gitignore file doesn't already exist in the root of your repository, create one. You can create the file manually or by using the command <code>touch .gitignore</code> in the root of your repository.</p>
+    </li>
+    <li><p><strong>Open the .gitignore file:</strong> Open the .gitignore file in a text editor.</p>
+    </li>
+    <li><p><strong>Add the file to ignore:</strong> Add the name of the file or directory you want to ignore on a new line in the .gitignore file. For example, to ignore a file called <code>temp.txt</code>, you would add the following line:</p>
+    <pre><code class="lang-plaintext"> temp.txt
+    </code></pre>
+    <p> You can also use wildcards to ignore multiple files that match a pattern. For example, to ignore all files with the .log extension, you would add the following line:</p>
+    <pre><code class="lang-plaintext"> *.log
+    </code></pre>
+    </li>
+    <li><p><strong>Save and commit the .gitignore file:</strong> Save the .gitignore file and commit the changes to your repository.</p>
+    </li>
+    <li><p><strong>Verify that the file is ignored:</strong> Verify that the file is being ignored by using the command <code>git status</code>. The ignored file should not be listed in the output.</p>
+    </li>
+    </ol>
+    <p>It's important to note that ignoring a file only affects the current repository, if you clone the repository or create a new one, you will need to repeat the process to ignore the files again.</p>
+    <p>Also, if the file you want to ignore has already been tracked by Git, you will need to first remove it from the repository by using the command <code>git rm --cached &lt;file&gt;</code> before adding it to the .gitignore file.</p>
+    <hr />
+    <h3 id="heading-git-readme-file">Git README File</h3>
+    <p>A README file is a text file that contains information about a project or repository. It typically includes information such as the project's purpose, how to install and use it, and how to contribute to the project. The README file is usually located in the root directory of a repository and is often the first thing that people see when they visit the repository on a code hosting platform like GitHub.</p>
+    <p>Here are some common elements that you might include in a README file:</p>
+    <ol>
+    <li><p><strong>Project description</strong>: This should be a brief overview of what the project does and what problem it solves.</p>
+    </li>
+    <li><p><strong>Installation instructions</strong>: This should include information on how to install and set up the project, including any dependencies that need to be installed.</p>
+    </li>
+    <li><p><strong>Usage instructions</strong>: This should include information on how to use the project, including any command-line arguments or options that can be used.</p>
+    </li>
+    <li><p><strong>Examples</strong>: It's a good idea to include some examples of how to use the project, to help users understand how it works.</p>
+    </li>
+    <li><p><strong>Contribution guidelines</strong>: If you want other people to contribute to your project, you should include information on how they can do so, including any coding standards or conventions that you follow.</p>
+    </li>
+    <li><p><strong>License</strong>: You should include information on the license your project is released under, which tells others what they are allowed to do with your code.</p>
+    </li>
+    <li><p><strong>Contact</strong>: If you want to make it easy for users to get in touch with you, you can include contact information such as your email address or social media handles.</p>
+    </li>
+    </ol>
+    <p>It's important to note that the README file should be written in a clear, concise, and easy-to-understand manner and should be kept up-to-date with the latest information about the project.</p>
+    <hr />
+    <h2 id="heading-other-important-commands-1">Other Important Commands</h2>
+    <h3 id="heading-git-squash">Git Squash</h3>
+    <p>Git squash is a technique that allows you to condense multiple commits into a single commit. This can be useful when you have made multiple commits that are related to a single change or feature, but you want to present them as a single commit in the repository's history. Squashing commits can make the history of a repository cleaner and more readable.</p>
+    <p>Here are the steps to squash commits in Git:</p>
+    <ol>
+    <li><p><strong>Checkout the branch you want to squash</strong>: Make sure you are on the branch that contains the commits you want to squash.</p>
+    </li>
+    <li><p><strong>Rebase interactively</strong>: Use the command <code>git rebase -i HEAD~n</code>, where "n" is the number of commits from the most recent commit that you want to include in the squash. This will open a text editor with a list of the commits and the word "pick" next to each one.</p>
+    </li>
+    <li><p><strong>Change "pick" to "squash"</strong>: Change the word "pick" next to the commits you want to squash to "squash". Leave the word "pick" next to the commits you want to keep. Save and exit the text editor.</p>
+    </li>
+    <li><p><strong>Edit the commit message</strong>: A new text editor will open, showing the commit messages of the squashed commits. Edit the commit message to include a brief summary of the changes made in the squashed commits. Save and exit the text editor.</p>
+    </li>
+    <li><p><strong>Force push</strong>: After squashing the commits, you need to force push the changes to the remote repository using <code>git push -f &lt;remote&gt; &lt;branch&gt;</code>.</p>
+    </li>
+    </ol>
+    <p>It's important to note that squashing commits is a destructive operation and can lead to data loss if not done correctly. Before you squash commits, make sure that you have a backup of your work, and that you have coordinated with other members of your team to avoid conflicts.</p>
+    <hr />
+    <h3 id="heading-git-revert">Git Revert</h3>
+    <p><code>git revert</code> is a Git command that allows you to undo changes in a specific commit and create a new commit to reverse those changes. Unlike <code>git reset</code>, <code>git revert</code> does not permanently discard changes, but instead adds a new commit that undoes the changes made in a previous commit.</p>
+    <p>Here is the basic syntax for using <code>git revert</code>:</p>
+    <pre><code class="lang-plaintext">git revert &lt;commit&gt;
+    </code></pre>
+    <p><code>commit</code> is the identifier for the commit you want to revert. You can specify a commit hash, tag, or relative reference (e.g. <code>HEAD~1</code> for the previous commit).</p>
+    <p>Example usage:</p>
+    <ul>
+    <li><p>To revert the previous commit, use:</p>
+    <pre><code class="lang-plaintext">  git revert HEAD~
+    </code></pre>
+    </li>
+    <li><p>To revert a specific commit, use:</p>
+    <pre><code class="lang-plaintext">  git revert &lt;commit&gt;
+    </code></pre>
+    </li>
+    </ul>
+    <p>After running the <code>git revert</code> command, Git will prompt you to create a new commit that reverses the changes made in the specified commit. This new commit will be added to the current branch and the changes made in the original commit will no longer be present in the branch.</p>
+    <p>Note: <code>git revert</code> is a safe option when you want to undo changes in a specific commit, as it does not permanently discard changes. Be sure to carefully check the state of your repository before and after using <code>git revert</code>.</p>
+    <hr />
+    <h3 id="heading-git-reset">Git Reset</h3>
+    <p><code>git reset</code> is a powerful Git command that allows you to reset the state of your repository to a specific commit, or unstage changes in the index. It is a versatile command that can be used to undo commits, unstage changes, or reset the current branch to a specific state.</p>
+    <p>In this blog, we will explore the different types of resets available in Git and how to use <code>git reset</code> effectively.</p>
+    <p><strong>Types of resets in Git</strong></p>
+    <p>Git provides three types of resets: <code>--soft</code>, <code>--mixed</code> (default), and <code>--hard</code>. The difference between these resets lies in how they affect the repository state.</p>
+    <ul>
+    <li><p><code>--soft</code> reset: The <code>--soft</code> reset changes the branch pointer to the specified commit, but it does not modify the contents of the working tree or the index. Uncommitted changes in the working tree are left intact.</p>
+    </li>
+    <li><p><code>--mixed</code> reset: The <code>--mixed</code> reset, which is the default reset type, changes the branch pointer to the specified commit and resets the index to match the contents of the specified commit. Uncommitted changes in the working tree are left intact.</p>
+    </li>
+    <li><p><code>--hard</code> reset: The <code>--hard</code> reset changes the branch pointer to the specified commit, resets the index to match the contents of the specified commit, and discards any changes in the working tree. This type of reset is destructive and should be used with caution.</p>
+    </li>
+    </ul>
+    <p><strong>How to use</strong> <code>git reset</code></p>
+    <p>Here is the basic syntax for using <code>git reset</code>:</p>
+    <pre><code class="lang-plaintext">git reset [--soft | --mixed | --hard] [&lt;commit&gt;]
+    </code></pre>
+    <p><code>&lt;commit&gt;</code> is the identifier for the commit you want to reset to. You can specify a commit hash, tag, or relative reference (e.g. <code>HEAD~1</code> for the previous commit).</p>
+    <p>Here are some examples of how to use <code>git reset</code> effectively:</p>
+    <ul>
+    <li><p>To unstage changes in the index, use:</p>
+    <pre><code class="lang-plaintext">  git reset
+    </code></pre>
+    </li>
+    <li><p>To reset the current branch to the most recent commit, use:</p>
+    <pre><code class="lang-plaintext">  git reset --hard HEAD
+    </code></pre>
+    </li>
+    <li><p>To reset the current branch to a specific commit, use:</p>
+    <pre><code class="lang-plaintext">  git reset --hard &lt;commit&gt;
+    </code></pre>
+    </li>
+    <li><p>To undo the most recent commit, use:</p>
+    <pre><code class="lang-plaintext">  git reset --soft HEAD~
+    </code></pre>
+    </li>
+    <li><p>To undo multiple commits, use:</p>
+    <pre><code class="lang-plaintext">  git reset --soft HEAD~&lt;number of commits&gt;
+    </code></pre>
+    </li>
+    </ul>
+    <p>Note: <code>git reset</code> is a powerful command that can be used to undo commits, unstage changes, or reset the current branch to a specific state. However, it is important to be careful when using this command, as it can permanently discard changes. It's a good practice to check the state of your repository before and after using <code>git reset</code>.</p>
+    <p>In conclusion, <code>git reset</code> is a versatile command that can be used to reset the state of your repository in various ways. Understanding the different types of resets and how to use <code>git reset</code> effectively can greatly simplify your Git workflow and help you to better manage your repository.</p>
+    <hr />
+    <h2 id="heading-tags-and-releases">Tags and Releases</h2>
+    <h3 id="heading-git-tag">Git Tag</h3>
+    <p>In Git, a tag is a label that is used to mark a specific point in the repository's history. Tags are typically used to mark a specific version or release of a project and are often used in conjunction with version numbers or release dates.</p>
+    <p>Here are some examples of how you might use git tags:</p>
+    <ol>
+    <li><p><strong>Create a tag:</strong> To create a tag, you can use the command <code>git tag &lt;tagname&gt;</code>. For example, <code>git tag v1.0</code> will create a tag called "v1.0". You can also add a message to the tag by adding <code>-a</code> and <code>-m</code> options, for example: <code>git tag -a v1.0 -m "First official release"</code>.</p>
+    </li>
+    <li><p><strong>List tags:</strong> To list all the tags in the repository, you can use the command git tag. This will display all the tags, in alphabetical order. You can also use <code>git tag -l</code> to filter tags by a pattern.</p>
+    </li>
+    <li><p>Push the tag to the remote repository: <code>git push origin &lt;tagname&gt;</code></p>
+    </li>
+    <li><p><strong>View tag details:</strong> To view detailed information about a specific tag, you can use the command <code>git show &lt;tagname&gt;</code>. This will display the tag details, including the changes made in the commit, the author and committer information, and the tag message.</p>
+    </li>
+    <li><p><strong>Checkout a specific tag:</strong> To switch to a specific tag, you can use the command <code>git checkout &lt;tagname&gt;</code>. This will switch your working directory to the state of the repository at the time the tag was created.</p>
+    </li>
+    <li><p><strong>Delete a tag:</strong> To delete a tag, you can use the command <code>git tag -d &lt;tagname&gt;</code></p>
+    </li>
+    </ol>
+    <hr />
+    <h3 id="heading-git-release">Git Release</h3>
+    <p>Git releases refer to versions of a project that have been officially published and made available to the public. They allow users to download and use a specific version of a project that has been thoroughly tested and considered stable. In a Git repository, releases are typically tagged using Git tags, which mark a specific point in the repository's Git history as being a release. Users can then checkout the repository at that specific tag to access the code and assets for that release. Releases can be used for a variety of purposes, including distributing software, libraries, or other projects to users, or for managing different versions of a project for internal use. The release process generally involves creating a new Git tag, building and testing the code and then publishing the release so that others can access and use it.</p>
+    <hr />
+    <h2 id="heading-git-clone">Git Clone</h2>
+    <p><code>git clone</code> is a Git command used to create a copy of an existing Git repository (also called "cloning" the repository). It is typically used to download a remote repository from a hosting service like GitHub, GitLab, or Bitbucket to your local machine.</p>
+    <p>Here's how you can use it:</p>
+    <ol>
+    <li><p>Open the terminal (or Git Bash on Windows) and navigate to the directory where you want to store the local copy of the repository.</p>
+    </li>
+    <li><p>Run the following command:</p>
+    <pre><code class="lang-plaintext"> git clone &lt;repository-url&gt;
+    </code></pre>
+    </li>
+    </ol>
+    <p>Replace <code>&lt;repository-url&gt;</code> with the URL of the remote repository that you want to clone.</p>
+    <ol>
+    <li>The command will download the entire repository and its entire Git history to your local machine. The repository will be stored in a new directory with the same name as the repository.</li>
+    </ol>
+    <p>For example, to clone the official repository of the Ruby programming language, you would run:</p>
+    <pre><code class="lang-plaintext">git clone https://github.com/ruby/ruby.git
+    </code></pre>
+    <p>This would download the entire repository and its entire Git history to a new directory named "ruby" in your current directory.</p>
+    <p><strong>Recommendation:</strong><br />To delete the remote repository named "origin" in Git, you can use the following command:</p>
+    <pre><code class="lang-plaintext">git remote rm origin
+    </code></pre>
+    <p>This command removes the remote repository named "origin" from your local Git configuration. After running this command, you will no longer be able to fetch updates or push changes to this remote repository.</p>
+    <p>Note that this command only removes the remote repository from your local Git configuration, not from the server where the repository is hosted. If you want to delete the repository from the server, you will need to log in to the server and delete it manually or use the web interface provided by the hosting service.</p>
+    <hr />
+    <h2 id="heading-open-source-contribution">Open Source Contribution</h2>
+    <h3 id="heading-introduction-2">Introduction</h3>
+    <p>Contributing to open-source projects on GitHub is a great way to learn new skills, give back to the community, and build your portfolio.</p>
+    <p>Here are the step-by-step commands to contribute to an open-source project on GitHub:</p>
+    <ol>
+    <li><p><strong>Fork the repository</strong>: Go to the GitHub page of the open-source project you want to contribute to and click the "Fork" button. This creates a copy of the repository under your own GitHub account.</p>
+    </li>
+    <li><p><strong>Clone the repository</strong>: Open a terminal and navigate to the directory where you want to clone the repository. Then use the following command to clone the repository to your local machine:</p>
+    <pre><code class="lang-plaintext"> git clone https://github.com/&lt;your_username&gt;/&lt;repository_name&gt;.git
+    </code></pre>
+    </li>
+    <li><p><strong>Create a new branch</strong>: Navigate into the repository directory and create a new branch to work on your changes:</p>
+    <pre><code class="lang-plaintext"> cd &lt;repository_name&gt;
+     git branch &lt;new_branch_name&gt;
+    </code></pre>
+    </li>
+    <li><p><strong>Checkout the branch</strong>: Switch to the new branch you just created:</p>
+    <pre><code class="lang-plaintext"> git checkout &lt;new_branch_name&gt;
+    </code></pre>
+    </li>
+    <li><p><strong>Make your changes</strong>: Make the changes you want to contribute to the project.</p>
+    </li>
+    <li><p><strong>Add and commit your changes</strong>: Once you've made your changes, you need to add them to the staging area and commit them to your local repository:</p>
+    <pre><code class="lang-plaintext"> git add &lt;file_name&gt;
+     git commit -m "Your commit message"
+    </code></pre>
+    </li>
+    <li><p><strong>Push your changes</strong>: Push your changes to your forked repository on GitHub:</p>
+    <pre><code class="lang-plaintext"> git push origin &lt;new_branch_name&gt;
+    </code></pre>
+    </li>
+    <li><p><strong>Create a pull request</strong>: Go to the GitHub page of your forked repository, and click the "Compare &amp; pull request" button. Select the branch you want to submit, add a detailed description of your changes, and submit the pull request.</p>
+    </li>
+    <li><p><strong>Discuss and review</strong>: The maintainers of the original repository will review your pull request and may ask you to make some changes or provide additional information.</p>
+    </li>
+    <li><p><strong>Merged</strong>: Once your pull request is accepted and merged into the main repository, your changes will be part of the project and you'll become a contributor.</p>
+    </li>
+    </ol>
+    <p>It's important to note that every open-source project has its own guidelines and procedures for contributing, so make sure to read the contributing documentation and follow the specific instructions provided by the project. Also, it's always a good idea to communicate with the maintainers of the project before making any significant changes.</p>
+    <hr />
+    <h3 id="heading-pull-request">Pull Request</h3>
+    <p>A pull request is a feature in Git and other version control systems that allow developers to propose changes to a codebase and ask for feedback or approval from their colleagues.</p>
+    <p>Here's how a typical pull request workflow might work:</p>
+    <ol>
+    <li><p>A developer creates a new branch in Git to work on a specific feature or fix.</p>
+    </li>
+    <li><p>The developer makes changes to the code on their branch, committing changes to the local repository as they go.</p>
+    </li>
+    <li><p>When the developer is ready to share their changes with the rest of the team, they create a pull request in the repository hosting service (such as GitHub or GitLab).</p>
+    </li>
+    <li><p>The pull request includes a summary of the changes made, any relevant screenshots or documentation, and a request for feedback or approval.</p>
+    </li>
+    <li><p>Other team members can review the changes and leave comments, suggest additional changes, or approve the pull request.</p>
+    </li>
+    <li><p>Once the changes have been reviewed and approved, the pull request can be merged into the main branch, incorporating the changes into the main codebase.</p>
+    </li>
+    </ol>
+    <p>Pull requests are a useful way to collaborate on code and ensure that changes are thoroughly reviewed and tested before they are merged into the main codebase. They can also provide a record of the changes made and the rationale behind them, making it easier to maintain and understand the code over time.</p>
+    <hr />
+    <h3 id="heading-pull-before-you-push-1">Pull Before You Push</h3>
+    <p><img data-zoomable="true" loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1677062252377/c08ab743-550b-49db-af93-62da0b66dd18.png?auto=compress,format&format=webp" alt class="image--center mx-auto" /></p>
+    <hr />
+    <h2 id="heading-workflows">Workflows</h2>
+    <h3 id="heading-git-workflow">Git Workflow</h3>
+    <p>Git flow is a specific branching model that provides a consistent and organized workflow for managing branches and releases in Git. It helps teams to work together effectively by providing a structure for how branches should be created, used, and merged.</p>
+    <p><img data-zoomable="true" loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1677061942586/5f23acb9-0ef2-448d-8c8c-b62711d827eb.png?auto=compress,format&format=webp" alt class="image--center mx-auto" /></p>
+    <p>At a high level, Git flow consists of two main branches: <code>main</code> and <code>develop</code>. The <code>main</code> branch is the main branch that always represents the production-ready code, while the <code>develop</code> branch is used for ongoing development.</p>
+    <p>To start a new feature, a new branch is created off of the <code>develop</code> branch. This feature branch is used to work on the new feature and make changes to the codebase. Once the feature is complete, it is merged back into the <code>develop</code> branch.</p>
+    <p>When the <code>develop</code> branch has a sufficient number of features and it's ready for a release, a new branch is created off of <code>develop</code> called <code>release</code>. This branch is used to make any final adjustments and fixes before the release.</p>
+    <p>Once the release is ready, it is merged into both <code>main</code> and <code>develop</code> branches. The <code>main</code> branch is then tagged with a release number and the <code>develop</code> branch continues with ongoing development.</p>
+    <p>Finally, if there are any bugs found in the <code>main</code> branch that need to be fixed, a new branch is created off of <code>main</code> called <code>hotfix</code>. This branch is used to make the necessary changes and once they are completed they are merged back into <code>main</code> and <code>develop</code> branches.</p>
+    <p>Git flow provides a clear and consistent workflow that makes it easy for teams to collaborate and work together. It helps to minimize confusion and ensure that the codebase remains stable and ready for production at all times.</p>
+    <p>Here is an example of how Git flow might be used in a software development project:</p>
+    <ol>
+    <li><p>A development team is working on a new feature for their application, and they want to create a new feature branch to work on it. They use the command <code>git branch feature-login</code> to create a new branch called "feature-login" off the <code>develop</code> branch.</p>
+    </li>
+    <li><p>The team members switch to the new branch using the command <code>git checkout feature-login</code>. They can now make changes to the codebase without affecting the main version of the code.</p>
+    </li>
+    <li><p>One team member makes changes to a file called "<a target="_blank" href="http://login.py">login.py</a>" and commits the changes using the command <code>git commit -am "added new function to</code> <a target="_blank" href="http://login.py"><code>login.py</code></a><code>"</code>. Another team member makes changes to a file called "<a target="_blank" href="http://config.py">config.py</a>" and commits the changes using the command <code>git commit -am "modified config settings"</code>.</p>
+    </li>
+    <li><p>After working on the feature for several days, the team decides that the feature is ready to be merged back into the develop branch. They switch back to the develop branch using the command <code>git checkout develop</code>, and then use the command <code>git merge feature-login</code> to merge the changes from the feature branch.</p>
+    </li>
+    <li><p>The development team continues to work on other features and bug fixes. Once they have a sufficient number of features and bug fixes, they create a new branch called <code>release</code> off of the <code>develop</code> branch and make any final adjustments and fixes before the release.</p>
+    </li>
+    <li><p>Once the release is ready, the team merges the release branch into both the <code>main</code> and <code>develop</code> branches. The <code>main</code> branch is then tagged with a release number and the <code>develop</code> branch continues with ongoing development.</p>
+    </li>
+    <li><p>If there are any bugs found in the <code>main</code> branch that need to be fixed, the team creates a new branch called <code>hotfix</code> off of the <code>main</code> branch. They make the necessary changes and once they are completed they are merged back into <code>main</code> and <code>develop</code> branches.</p>
+    </li>
+    <li><p>After the hotfix is done and merged into <code>main</code> branch, the team creates a new release branch off of <code>develop</code> branch, and continues to work on new features and bug fixes.</p>
+    </li>
+    <li><p>This process continues as the team works on new features, releases, and hotfixes. The <code>main</code> branch always represents the production-ready code and the <code>develop</code> branch is used for ongoing development.</p>
+    </li>
+    </ol>
+    <p>It's important to note that Git flow is just one of many branching models available, and it may not be the best fit for every project. However, it is a widely used and well-established model that can help teams work together effectively and keep the codebase stable and ready for production at all times.</p>
+    <hr />
+    <h3 id="heading-github-workflow">GitHub Workflow</h3>
+    <p>GitHub workflow is a Git-based model that provides a systematic approach for managing software development projects in a collaborative environment. It involves a series of steps for managing tasks, making changes, and testing code.</p>
+    <p><img data-zoomable="true" loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1677066700400/6f6e1e56-b8d4-4b8b-aba7-995501b5d536.png?auto=compress,format&format=webp" alt class="image--center mx-auto" /></p>
+    <p>The following is an overview of the GitHub workflow process:</p>
+    <ol>
+    <li><p>Create a repository: Create a new repository for your project on GitHub. This repository will store your code and enable you to collaborate with others.</p>
+    </li>
+    <li><p>Create a branch: Create a new branch from the main branch for each feature or bug fix that you want to work on. The branch allows you to work on changes without affecting the main branch.</p>
+    </li>
+    <li><p>Make changes: Make changes to the code in your branch. Commit your changes frequently to the branch. This keeps track of your changes and enables you to revert to a previous version of the code if needed.</p>
+    </li>
+    <li><p>Open a pull request: When you are ready to merge your changes into the main branch, open a pull request. The pull request shows the changes you made, and it allows other team members to review and comment on your code.</p>
+    </li>
+    <li><p>Review and test: Team members review your changes and test the code to ensure that it works as expected. If there are any issues, they provide feedback, and you make changes as needed.</p>
+    </li>
+    <li><p>Merge changes: Once the code has been reviewed and tested, it can be merged into the main branch. This ensures that all team members are working from the same codebase.</p>
+    </li>
+    <li><p>Deploy and monitor: Once the changes are merged, they can be deployed to the production environment. The code is then monitored to ensure that it is functioning as expected.</p>
+    </li>
+    <li><p>Close the pull request: Once the changes have been merged, the pull request can be closed. This keeps the repository clean and organized.</p>
+    </li>
+    </ol>
+    <p>Overall, the GitHub workflow process enables multiple team members to collaborate on the same codebase, while ensuring that changes are made systematically and with proper review and testing.</p>
+    <hr />
+    <h2 id="heading-others">Others</h2>
+    <ul>
+    <li><p><strong>Origin:</strong><br />  In Git, <code>origin</code> is a default name given to the remote repository that a local repository was originally cloned from. The remote repository name is used to specify the location of the repository on a server and it can be used to interact with the remote repository.</p>
+    </li>
+    <li><p><strong>HEAD:</strong><br />  In Git, the <code>HEAD</code> is a special reference that points to the most recent commit on the current branch. It is used as a way to refer to the current state of the repository and can be thought of as a pointer to the tip of the current branch.</p>
+    </li>
+    <li><p><strong>Writing Commit Messages:</strong><br />  Writing clear and concise commit messages is an important best practice in Git, as it helps you and your collaborators understand the changes that were made and why. Here are some tips for writing effective Git commit messages:</p>
+    <ol>
+    <li><p>Keep it short: Try to keep your commit message under 50 characters, as this is the default length that Git uses to display messages in some contexts.</p>
+    </li>
+    <li><p>Be descriptive: Your commit message should describe the changes that were made and why they were made. Use clear and specific language to help others understand the purpose of the changes.</p>
+    </li>
+    <li><p>Use the imperative mood: Write your commit messages in the imperative mood, as if you are giving a command. For example, instead of saying "Fixed a bug", say "Fix bug in login form". This makes the message more action-oriented and easier to understand.</p>
+    </li>
+    <li><p>Include relevant information: If your commit relates to an issue or pull request, include the reference number in your message. You can also include links to relevant documentation or resources.</p>
+    </li>
+    <li><p>Break it up: If your commit includes multiple changes or fixes, break up the message into bullet points to make it easier to read.</p>
+    </li>
+    <li><p>Proofread: Take the time to review your commit message before submitting it. Typos and unclear language can make it harder for others to understand the purpose of the changes.</p>
+    </li>
+    </ol>
+    </li>
+    </ul>
+    <p>    Remember, commit messages are a form of documentation, so it's important to take them seriously and put in the effort to make them clear and informative.</p>
+    </div></div> 
+    <a href="#home" id="home" class="scroll-up-btn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+   <script src="/js/app.js"></script>
+</body>
+</html>
