@@ -96,10 +96,16 @@ main{
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin-left: 250px;
+ /*  margin-left: 250px; */
   margin-top: 25px;
-  max-width: 70%;
+  max-width: 80%;
 
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .contenu{
     text-align: center;
@@ -184,9 +190,10 @@ a:hover{
 .fig{
     font-size: 14px;
 }
-.spec img{
-    max-width: 80%;
+ img{
+    max-width: 100%;
     margin-top: 20px;
+    margin-left: 80px;
 }
 
 
@@ -348,4 +355,7 @@ footer ul li {
 
 .fa-instagram {
 	color: #c33d6f;
+}
+.logo img{
+    margin-left: 0;
 }

@@ -93,7 +93,7 @@
         <!-- A propos -->     
         <section>
          <div class="container-video">
-             <h1>Noms de domaines</h1>
+             <h1>Terminal</h1>
              <video src="/ressources/video.mp4" class="video"></video>
      
              <div class="controls">
@@ -179,14 +179,14 @@
                     
                     [~]$
                  </p>
-                 <p class="lamda">Cette alerte est le résultat d'une modification apportée dans macOS Catalina .Vous n'avez rien à faire pour le moment ; nous aborderons ce problème la première fois qu'il fera une différence dans ce didacticiel ( Section  2.3 ).Pour plus d'informations, consultez l'article du blog Learn Enough « Utilisation de Z Shell sur Mac avec les didacticiels Learn Enough ».</p>
+                 <p class="lamda">Cette alerte est le résultat d'une modification apportée dans macOS Catalina .Vous n'avez rien à faire pour le moment ; nous aborderons ce problème la première fois qu'il fera une différence dans ce didacticiel ( Section  2.3 ).Pour plus d'informations, consultez l'article du blog 643-code « Utilisation de Z Shell sur Mac avec les didacticiels 643-code ».</p>
 
                  <h2>Linux</h2>
                  <p class="lamda">Sous Linux, vous pouvez cliquer sur l’icône du terminal comme indiqué dans la Figure  1.3 .Le résultat devrait ressembler à la Figure  1.4 , bien que les détails exacts de votre système soient probablement différents.</p>
                  <p class="cycle spec"><img src="/ressources/t1.png" alt=""></p>
                  <p class="fig">Figure 1.3 : L’icône du terminal Linux.</p>
                  <h2>Windows</h2>
-                 <p class="lamda">Sous Windows, l'option recommandée est d'installer Linux (que, incroyablement, Microsoft a décidé de prendre en charge nativement) comme décrit dans la section Windows du tutoriel gratuit Learn Enough Dev Environment to Be Dangerous .Une fois Linux installé, vous devez rechercher une icône de terminal comme décrit dans la section  1.2.2 .Appliquez votre sophistication technique ( encadré  1.4 ) si vous êtes bloqué.</p>
+                 <p class="lamda">Sous Windows, l'option recommandée est d'installer Linux (que, incroyablement, Microsoft a décidé de prendre en charge nativement) comme décrit dans la section Windows du tutoriel gratuit 643-code Dev Environment pour se perfectionner .Une fois Linux installé, vous devez rechercher une icône de terminal comme décrit dans la section  1.2.2 .Appliquez votre sophistication technique ( encadré  1.4 ) si vous êtes bloqué.</p>
                  <h2>Fenêtre du terminal</h2>
                  <p class="lamda">Quel que soit le système d'exploitation que vous utilisez, votre fenêtre de terminal devrait ressembler à la Figure  1.4 , bien que les détails puissent différer.</p>
                  <p class="cycle spec"><img src="/ressources/t2.png" alt=""></p>
@@ -207,10 +207,10 @@
                     Enfin, l’invite que je regarde en ce moment ressemble à ceci : <br>
                     <p class="cod"> 
                     [learn_enough_command_line (premier brouillon)]$  </p><br>
-                    Pour les besoins de ce didacticiel, les détails de l'invite ne sont pas importants, mais nous discuterons des moyens utiles pour personnaliser l'invite à partir du prochain didacticiel après celui-ci ( Apprendre suffisamment d'éditeur de texte pour être dangereux ).
+                    Pour les besoins de ce didacticiel, les détails de l'invite ne sont pas importants, mais nous discuterons des moyens utiles pour personnaliser l'invite à partir du prochain didacticiel après celui-ci (le tutorield'éditeur de texte  ).
                 </div>
                 <h2 id="quatre">1.2.1 Exercices</h2>
-                <p class="lamda">Apprendre suffisamment de ligne de commande pour être dangereux comprend un grand nombre d'exercices.Je vous recommande fortement de prendre l'habitude de les essayer avant de passer à la section suivante, car ils renforcent le matériel que nous venons de couvrir et vous donneront une pratique essentielle dans l'utilisation des nombreuses commandes abordées.En général, il n'est pas nécessaire de procéder ainsi. Si vous êtes bloqué, c'est parfois une bonne idée de continuer et de revoir l'exercice plus tard.En effet, c’est également un bon conseil pour le texte principal : vous serez surpris de voir à quelle fréquence une idée apparemment impossible ou un problème insoluble paraîtra facile la deuxième fois.</p>
+                <p class="lamda">Apprendre suffisamment de ligne de commande  comprend un grand nombre d'exercices.Je vous recommande fortement de prendre l'habitude de les essayer avant de passer à la section suivante, car ils renforcent le matériel que nous venons de couvrir et vous donneront une pratique essentielle dans l'utilisation des nombreuses commandes abordées.En général, il n'est pas nécessaire de procéder ainsi. Si vous êtes bloqué, c'est parfois une bonne idée de continuer et de revoir l'exercice plus tard.En effet, c’est également un bon conseil pour le texte principal : vous serez surpris de voir à quelle fréquence une idée apparemment impossible ou un problème insoluble paraîtra facile la deuxième fois.</p>
                   <p class="exo">1-En vous référant à la Figure  1.5 , identifiez l’invite, la commande, les options, les arguments et le curseur dans chaque ligne de la Figure  1.6 .</p>
                   <p class="exo">2-La plupart des programmes de terminaux modernes ont la capacité de créer plusieurs onglets ( Figure  1.7 ), qui sont utiles pour organiser un ensemble de fenêtres de terminaux associées .En examinant les éléments de menu de votre programme de terminal ( Figure  1.8 ), découvrez comment créer un nouvel onglet. Crédit supplémentaire : apprenez le raccourci clavier pour créer un nouvel onglet.(Apprendre les raccourcis clavier de votre système est une excellente habitude à cultiver.)</p>
                   <p class="cycle spec"><img src="/ressources/t4.png" alt=""></p>
@@ -257,70 +257,78 @@
          <div class="contenu">
              <div class="intro">
                  <h3>Chapitre 1</h3>
-                 <h2 id="cinq">1.3 Our first command</h2>
-                <p class="lamda">We are now prepared to run our first command, which prints the word “hello” to the screen. (The place where characters get printed is known as “standard out”, which is usually just the screen, and rarely refers to a physical printer.) The command is echo, and the argument is the string of characters—or simply string for short—that we want to print. To run the echo command, type “echo hello” at the prompt, and then press the Return key (also called Enter):</p>
+                 
+<h2 id="cinq">1.3 Notre première commit</h2>
+                <p class="lamda">Nous sommes maintenant prêts à exécuter notre première commande, qui affiche le mot « hello » à l'écran. (L'endroit où les caractères sont affichés est appelé « sortie standard », qui correspond généralement à l'écran et fait rarement référence à une imprimante physique.) La commande est echo, et l'argument est la chaîne de caractères (ou simplement chaîne) que nous voulons afficher. Pour exécuter la commande echo, tapez « echo hello » à l'invite, puis appuyez sur la touche Retour (également appelée Entrée) :</p>
                 <p class="cod">
-                    $ echo hello <br>
-                    hello <br>
-                    $
-                </p>
-                <p class="lamda">(I recommend always typing the commands out yourself, which will let you learn more than if you rely on copying and pasting.) Here we see that echo hello prints “hello” and then returns another prompt. Note that, for brevity, I’ve omitted all characters in the prompt except the dollar sign $.</p>
-                <p class="lamba">Just to make the pattern clear, let’s try a second echo command:</p>
+$ echo hello <br>
+hello <br>
+$
+</p>
+                <p class="lamda">(Je recommande de toujours taper les commandes vous-même, ce qui vous permettra d'apprendre davantage que si vous vous contentez de copier-coller.) Ici, nous voyons que echo hello affiche « hello », puis renvoie une autre invite. Notez que, par souci de concision, j'ai omis tous les caractères de l'invite à l'exception du signe dollar $.
+                
+<p class="lamba">Pour clarifier le schéma, essayons une deuxième commande echo :</p>
                 <p class="cod">
-                    $ echo "goodbye" <br>
-                    goodbye <br>
-                    $ echo 'goodbye' <br>
-                    goodbye <br>
-                    $
-                </p>
-                <p class="lamda">Note here that we’ve wrapped “goodbye” in quotation marks—and we also see that we can use either double quotes, as in "goodbye", or single quotes, as in 'goodbye'. Such quotes can be used to group strings visually, though in many contexts they are not required by echo (Listing 1.2).</p>
+$ echo « goodbye » <br>
+goodbye <br>
+$ echo “goodbye” <br>
+goodbye <br>
+$
+</p>
+                <p class="lamda">Notez ici que nous avons mis « goodbye » entre guillemets — et nous voyons également que nous pouvons utiliser soit des guillemets doubles, comme dans « goodbye », soit des guillemets simples, comme dans « goodbye ». Ces guillemets peuvent être utilisés pour regrouper visuellement des chaînes de caractères, bien que dans de nombreux contextes, ils ne soient pas requis par echo (listing 1.2).</p>
+                
+<p class="cod">
+                    Listing 1.2 : Affichage de « hello, goodbye » de deux manières différentes. <br>
+$ echo hello, goodbye <br>
+hello, goodbye <br>
+$ echo « hello, goodbye » <br>
+hello, goodbye <br>
+$
+</p>
+                
+<p class="lamda">Une chose qui peut arriver lorsque vous utilisez des guillemets est de ne pas les faire correspondre accidentellement, comme suit :</p>
                 <p class="cod">
-                    Listing 1.2: Printing “hello, goodbye” two different ways. <br>
-                    $ echo hello, goodbye <br>
-                    hello, goodbye <br>
-                    $ echo "hello, goodbye" <br>
-                    hello, goodbye <br>
-                    $
-                </p>
-                <p class="lamda">One thing that can happen when using quotes is accidentally not matching them, as follows:</p>
-                <p class="cod">
-                    $ echo "hello, goodbye <br>
-                    >
-                </p>
-                 <p class="lamda">
-                    At this point, it seems we’re stuck. There are specific ways out of this quandary (in fact, in this case you can just add a closing quote and hit return), but it’s good to have a general strategy for getting out of trouble (Figure 1.9).6 This strategy is called “Ctrl-C” (Box 1.3).
-                 </p>
+$ echo « hello, goodbye <br>
+>
+</p>
+                 
+<p class="lamda">
+                    À ce stade, nous semblons être bloqués. Il existe des moyens spécifiques pour sortir de cette impasse (en fait, dans ce cas, vous pouvez simplement ajouter une citation de fermeture et appuyer sur Entrée), mais il est bon d'avoir une stratégie générale pour se sortir d'une situation difficile (Figure 1.9).6 Cette stratégie s'appelle « Ctrl-C » (Encadré 1.3).
+                 
+</p>
                  <p class="cycle spec"><img src="/ressources/t7.png" alt=""></p>
-                 <p class="fig">Figure 1.9: This cat appears to be stuck and should probably hit Ctrl-C.</p>
-                 <div class="comment">
-                    Box 1.3. Getting out of trouble <br>
-                    When using the command line, there are lots of things that can get you in trouble, by which I mean the terminal will just hang or otherwise end up in a state that makes entering further commands difficult or impossible. Here are some examples of such commands:
-                    <br>
-                    <p class="cod">
+                 <p class="fig">Figure 1.9 : Ce chat semble être bloqué et devrait probablement appuyer sur Ctrl-C.
+                 
+<div class="comment">
+                    Encadré 1.3. Se sortir d'une situation difficile <br>
+Lorsque vous utilisez la ligne de commande, de nombreux éléments peuvent vous causer des problèmes, c'est-à-dire que le terminal peut se bloquer ou se retrouver dans un état qui rend difficile, voire impossible, la saisie d'autres commandes. Voici quelques exemples de telles commandes :
+<br>
+                    
+<p class="cod">
                      $ echo "hello </p> <br>
                      <p class="cod">$ grep foobar </p> <br>
-                     <p class="cod">$ yes </p> <br> 
-                     <p class="cod">$ tail </p> <br> 
-                     <p class="cod">$ cat </p><br> 
-                    In every case, the solution is the same: hit Ctrl-C (pronounced “control-see”). Here Ctrl refers to the “control” key on your keyboard, and C refers to the key labeled “C”. Ctrl-C thus means “While holding down the control key, press C.” In particular, C does not refer to the capital letter C, so you should not press Shift in addition to Ctrl. (Ctrl-C sends a control code to the terminal and has nothing to do with producing a capital C when typing normal text.) The result of typing Ctrl-C is sometimes written as ⌃C, like this:
+                     <p class="cod">$ yes </p> <br>
+                     <p class="cod">$ tail </p> <br>
+                     <p class="cod">$ cat </p><br>
+                     Dans tous les cas, la solution est la même : appuyez sur Ctrl-C (prononcé « contrôle-C »). Ici, Ctrl fait référence à la touche « contrôle » de votre clavier, et C fait référence à la touche marquée « C ». Ctrl-C signifie donc « Tout en maintenant la touche contrôle enfoncée, appuyez sur C ». En particulier, C ne fait pas référence à la lettre majuscule C, vous ne devez donc pas appuyer sur Maj en plus de Ctrl. (Ctrl-C envoie un code de contrôle au terminal et n'a rien à voir avec la production d'un C majuscule lors de la saisie de texte normal.) Le résultat de la saisie de Ctrl-C est parfois écrit sous la forme ⌃C, comme ceci :
                             <br>
                             <p class="cod">
                      $ tail <br>
                      ^C  </p>  <br>
-                    The origins of Ctrl-C are somewhat obscure, but as a mnemonic I like to think of it as meaning “cancel”. However you remember it, do remember it: when you get into trouble at the command line, your best bet is usually to hit Ctrl-C.
+                    
+Les origines de Ctrl-C sont quelque peu obscures, mais comme aide-mémoire, j'aime à penser que cela signifie « annuler ». Quelle que soit la manière dont vous vous en souvenez, souvenez-vous-en : lorsque vous rencontrez des difficultés dans la ligne de commande, la meilleure solution est généralement d'appuyer sur Ctrl-C.
                          <br>
-                    Note: When Ctrl-C fails, 90% of the time hitting ESC (escape) will do the trick.
-                 </div>
-
-                  <h2 id="six">1.3.1 Exercises</h2>
+Remarque : lorsque Ctrl-C ne fonctionne pas, dans 90 % des cas, appuyer sur ESC (échap) fera l'affaire.
+                 
+</div>
+                  <h2 id="six">1.3.1 Exercices</h2>
+<p class="exo">
+1-Écrivez une commande qui affiche la chaîne « hello, world ». Bonus : comme dans le listing 1.2, faites-le de deux manières différentes, avec et sans guillemets.
+                  
+</p>
                   <p class="exo">
-                       1-Write a command that prints out the string “hello, world”. Extra credit: As in Listing 1.2, do it two different ways, both with and without using quotation marks.
-
-                  </p>
-                  <p class="exo">
-                    2-Type the command echo 'hello (with a mismatched single quote), and then get out of trouble using the technique from Box 1.3.
-
-                  </p>
+2-Tapez la commande echo 'hello (avec un guillemet simple non apparié), puis sortez-vous de cette situation délicate en utilisant la technique de l'encadré 1.3.
+</p>
 
                   <button class="btn">Commencer: le chapitre</button>
 
@@ -432,7 +440,7 @@
                     
                     Dans le domaine technologique, une compétence similaire (ou, plus précisément, un ensemble de compétences) existe sous la forme de sophistication technique .En plus des « compétences techniques » comme la familiarité avec les éditeurs de texte et la ligne de commande Unix, la sophistication technique comprend des « compétences générales » comme la recherche d'éléments de menu prometteurs et la connaissance des types de termes de recherche à insérer dans Google (comme illustré dans « Tech Support Cheat Sheet » de xkcd ), ainsi qu'une attitude consistant à faire ce qu'il faut pour que la machine fasse nos enchères ( encadré  1.1 ). <br> <br>
                     
-                    Ces compétences générales et cette attitude sont difficiles à enseigner directement, donc à mesure que vous progressez dans ce tutoriel Learn Enough et les suivants , vous devez toujours être à la recherche d'opportunités pour augmenter votre sophistication technique (comme, par exemple, apprendre à obtenir l'essentiel d'un programme en parcourant sa page de manuel ( Section  1.4 )).Au fil du temps, l'effet cumulatif sera que, comme l'auteur de « Tech Support Cheat Sheet », vous aurez la capacité apparemment magique de tout faire dans chaque programme. <br>
+                    Ces compétences générales et cette attitude sont difficiles à enseigner directement, donc à mesure que vous progressez dans ce tutoriel 643-code et les suivants , vous devez toujours être à la recherche d'opportunités pour augmenter votre sophistication technique (comme, par exemple, apprendre à obtenir l'essentiel d'un programme en parcourant sa page de manuel ( Section  1.4 )).Au fil du temps, l'effet cumulatif sera que, comme l'auteur de « Tech Support Cheat Sheet », vous aurez la capacité apparemment magique de tout faire dans chaque programme. <br>
                     
                     Au fait, il manque à « Tech Support Cheat Sheet » quelques techniques importantes pour résoudre les problèmes courants (énumérées ici par ordre croissant de gravité, qui est l'ordre dans lequel vous devriez les essayer) : <br> <br>
                     
@@ -755,7 +763,7 @@
              <div class="intro">
                  <h3 id="chap2">Chapitre 2</h3>
                  <h2 id="seize">Manipulation de fichiers</h2>
-                 <p class="lamda">Après avoir expliqué comment exécuter une commande de base, nous sommes maintenant prêts à apprendre à manipuler des fichiers, l'une des tâches les plus importantes de la ligne de commande.Étant donné que ce tutoriel ne suppose aucun prérequis technique, nous n'exigerons aucune connaissance des programmes conçus pour éditer du texte.(De tels programmes, appelés éditeurs de texte , font l'objet du prochain tutoriel de la séquence, Apprendre suffisamment d'éditeur de texte pour être dangereux .)Cela signifie que nous devrons créer des fichiers à la main sur la ligne de commande.Mais il s’agit d’une fonctionnalité, pas d’un bug ( encadré  2.1 ), car apprendre à créer des fichiers en ligne de commande est une compétence précieuse en soi.</p>
+                 <p class="lamda">Après avoir expliqué comment exécuter une commande de base, nous sommes maintenant prêts à apprendre à manipuler des fichiers, l'une des tâches les plus importantes de la ligne de commande.Étant donné que ce tutoriel ne suppose aucun prérequis technique, nous n'exigerons aucune connaissance des programmes conçus pour éditer du texte.(De tels programmes, appelés éditeurs de texte , font l'objet du prochain tutoriel de la séquence,le tutorield'éditeur de texte  .)Cela signifie que nous devrons créer des fichiers à la main sur la ligne de commande.Mais il s’agit d’une fonctionnalité, pas d’un bug ( encadré  2.1 ), car apprendre à créer des fichiers en ligne de commande est une compétence précieuse en soi.</p>
                  <p class="comment">
                     Encadré 2.1. Apprendre à parler « geek » <br>
                     Une partie importante de l’apprentissage du développement logiciel consiste à se familiariser avec la culture des hackers , des nerds et des geeks dont une grande partie est issue.Par exemple, l’expression « Ce n’est pas un bug, c’est une fonctionnalité » est une façon courante de transformer un défaut apparent en vertu.Le Jargon File , qui comprend un lexique énorme et divertissant de termes de hackers, développe ce thème dans son entrée sur la fonctionnalité : <br>
@@ -888,118 +896,122 @@
          <div class="contenu">
              <div class="intro">
                  <h3>Chapitre 2</h3>
-                 <h2 id="dixneuf">2.2 Listing</h2>
-                <p class="lamda">Perhaps the most frequently typed command on the Unix command line is ls, short for “list” (Listing 2.1).</p>
-                <p class="cod"> 
-                    Listing 2.1: Listing files and directories with ls. (Output will vary.) <br>
-                    $ ls <br>
-                    Desktop <br>
-                    Downloads <br>
-                    sonnet_1.txt <br>
-                    sonnet_1_reversed.txt
-                </p>
-                <p class="lamda">The ls command simply lists all the files and directories in the current directory (except for those that are hidden, which we’ll learn more about in a moment). In this sense, it’s effectively a command-line version of the graphical browser used to show files and directories (also called “folders”), as seen in Figure 2.3. (We’ll sharpen our understanding of directories and folders in Chapter 4.) As with a graphical file browser, the output in Listing 2.1 is just a sample, and results will differ based on the details of your system. (This goes for all the ls examples, so don’t be concerned if there are minor differences in output.)</p>
+                 
+<h2 id="dixneuf">2.2 Listing</h2>
+                <p class="lamda">La commande la plus fréquemment tapée sur la ligne de commande Unix est sans doute ls, abréviation de « list » (Listing 2.1).</p>
+                
+<p class="cod"> 
+                    Liste 2.1 : Liste des fichiers et répertoires avec ls. (Le résultat peut varier.) <br>
+                    
+$ ls <br>
+                    Bureau <br>
+Téléchargements <br>
+sonnet_1.txt <br>
+sonnet_1_reversed.txt
+</p>
+                <p class="lamda">La commande ls liste simplement tous les fichiers et répertoires du répertoire actuel (à l'exception de ceux qui sont cachés, dont nous parlerons plus en détail dans un instant). En ce sens, il s'agit en fait d'une version en ligne de commande du navigateur graphique utilisé pour afficher les fichiers et les répertoires (également appelés « dossiers »), comme le montre la figure 2.3. (Nous approfondirons notre compréhension des répertoires et des dossiers au chapitre 4.) Comme pour un navigateur de fichiers graphique, la sortie du listing 2.1 n'est qu'un exemple, et les résultats varieront en fonction des caractéristiques de votre système. (Cela vaut pour tous les exemples ls, ne vous inquiétez donc pas s'il y a des différences mineures dans la sortie.)</p>
                 <p class="cycle spec"><img src="/ressources/t11.png" alt=""></p>
-                <p class="fig">Figure 2.3: The graphical equivalent of ls.</p>
-                
-                
-                
-                
-                <p class="lamda">The ls command can be used to check if a file (or directory) exists, because trying to ls a nonexistent file results in an error message, as seen in Listing 2.2.</p>
+                <p class="fig">Figure 2.3 : L'équivalent graphique de ls.</p>
+                                                                                
+<p class="lamda">La commande ls peut être utilisée pour vérifier si un fichier (ou un répertoire) existe, car essayer d'utiliser ls sur un fichier inexistant entraîne un message d'erreur, comme le montre le listing 2.2. </p>
                 <p class="cod">
-                    Listing 2.2: Running ls on a nonexistent file.
-                    $ ls foo
-                    ls: foo: No such file or directory
-                    $ touch foo
-                    $ ls foo
-                    foo
-                </p>
-                <p class="lamda">Listing 2.2 uses the touch command to create an empty file with the name foo (Box 2.2), so the second time we run ls the error message is gone. (The stated purpose of touch is to change the modification time on files or directories, but (ab)using touch to create empty files as in Listing 2.2 is a common Unix idiom.)</p>
-                <div class="comment">
-                    Box 2.2. Foo, bar, baz, etc. <br>
-                   <br>  When reading about computers, you will encounter certain strange words—words like foo, bar, and baz—with surprising frequency. Indeed, in addition to ls foo and touch foo, we have already seen three such references in this tutorial: in a typical command-line command (Figure 1.2), when getting out of trouble (grep foobar in Box 1.3), and yet again in a man page (Listing 1.4). The first two were my own uses, but the last I had nothing to do with:
+Listing 2.2 : Exécution de ls sur un fichier inexistant.
+                    
+$ ls foo
+                    ls : foo : Aucun fichier ou répertoire de ce type
+$ touch foo
+$ ls foo
+foo
+</p>
+<p class="lamda">Le listing 2.2 utilise la commande touch pour créer un fichier vide nommé foo (encadré 2.2), de sorte que la deuxième fois que nous exécutons ls, le message d'erreur a disparu. (L'objectif déclaré de touch est de modifier la date de modification des fichiers ou des répertoires, mais l'utilisation (abusive) de touch pour créer des fichiers vides comme dans le listing 2.2 est une pratique courante sous Unix.)</p>
+                
+<div class="comment">
+                    Encadré 2.2. Foo, bar, baz, etc. <br>
+                   <br>  Lorsque vous lisez des articles sur les ordinateurs, vous rencontrez fréquemment certains mots étranges, tels que foo, bar et baz. En effet, outre ls foo et touch foo, nous avons déjà vu trois références de ce type dans ce tutoriel : dans une commande en ligne de commande classique (Figure 1.2), pour sortir d'une situation difficile (grep foobar dans l'encadré 1.3), et encore une fois dans une page de manuel (listing 1.4). Les deux premières étaient mes propres utilisations, mais je n'avais rien à voir avec la dernière :
                     <p class="cod">
-                     ...if name contains a slash (/) then man interprets
-                     it as a file specification,  so that you can do man <br>
-                     ./foo.5 or even man /cd/foo/bar.1.gz. <br></p>
-                    Here we see both foo and bar making an appearance in the man page for man itself—an unambiguous testament to their ubiquity in computing.
-                  <br>  
-                    What is the origin of these odd terms? As usual, the Jargon File (via its entry on foo) enlightens us: <br> <br>
+...
+ si le nom contient une barre oblique (/), man l'interprète
+comme une spécification de fichier,  ce qui vous permet de faire man <br>
+./foo.5 ou même man /cd/foo/bar.1.gz. <br></p>
                     
-                    foo: /foo/ <br>
+Nous voyons ici foo et bar apparaître dans la page de manuel de man lui-même, ce qui témoigne sans ambiguïté de leur omniprésence dans l'informatique.
+                  <br>
+Quelle est l'origine de ces termes étranges ? Comme d'habitude, le Jargon File (via son entrée sur foo) nous éclaire : <br> <br>
+                                        
+foo : /foo/ <br>
                     
-                    1. interj. Term of disgust. <br>
+1. interj. Terme exprimant le dégoût. <br>
+2. [très courant] Utilisé de manière très générale comme nom d'exemple pour absolument tout, en particulier les programmes et les fichiers (notamment les fichiers temporaires). <br>
+3. Premier élément de la liste standard des variables métasyntaxiques utilisées dans les exemples de syntaxe. Voir aussi bar, baz, qux, quux, etc. <br>
+                    Lorsque « foo » est utilisé en relation avec « bar », il remonte généralement à l'acronyme argotique de l'armée de la Seconde Guerre mondiale FUBAR [voir la signification originale], modifié par la suite en foobar. Les premières versions du Jargon File ont interprété ce changement comme une censure d'après-guerre, mais il semble désormais plus probable que FUBAR soit lui-même un dérivé de « foo », peut-être influencé par le mot allemand furchtbar (terrible) — « foobar » pourrait en fait être la forme originale. <br><br>
+En suivant le lien vers les variables métasyntaxiques, nous trouvons ensuite ce qui suit : <br> <br>
+                                        
+variable métasyntaxique : n. <br>
+                    Nom utilisé dans des exemples et compris comme représentant tout ce qui fait l'objet de la discussion, ou tout membre aléatoire d'une classe de choses faisant l'objet de la discussion. Le mot foo en est l'exemple canonique. Pour éviter toute confusion, les hackers n'utilisent jamais (ou presque jamais) « foo » ou d'autres mots similaires comme noms permanents pour quoi que ce soit. Dans les noms de fichiers, une convention courante veut que tout nom de fichier commençant par un nom de variable métasyntaxique soit un fichier temporaire pouvant être supprimé à tout moment.
                     
-                    2. [very common] Used very generally as a sample name for absolutely anything, esp. programs and files (esp. scratch files). <br>
-                    
-                    3. First on the standard list of metasyntactic variables used in syntax examples. See also bar, baz, qux, quux, etc. <br>
-                    
-                    When ‘foo’ is used in connection with ‘bar’ it has generally traced to the WWII-era Army slang acronym FUBAR [see original meaning], later modified to foobar. Early versions of the Jargon File interpreted this change as a post-war bowdlerization, but it now seems more likely that FUBAR was itself a derivative of ‘foo’ perhaps influenced by German furchtbar (terrible) — ‘foobar’ may actually have been the original form. <br><br>
-                    
-                    Following the link to metasyntactic variables, we then find the following: <br> <br>
-                    
-                    metasyntactic variable: n. <br>
-                    
-                    A name used in examples and understood to stand for whatever thing is under discussion, or any random member of a class of things under discussion. The word foo is the canonical example. To avoid confusion, hackers never (well, hardly ever) use ‘foo’ or other words like it as permanent names for anything. In filenames, a common convention is that any filename beginning with a metasyntactic-variable name is a scratch file that may be deleted at any time.
-                    
-                   Metasyntactic variables are so called because (1) they are variables in the metalanguage used to talk about programs, etc.; (2) they are variables whose values are often variables (as in usages like “the value of f(foo,bar) is the sum of foo and bar”). However, it has been plausibly suggested that the real reason for the term “metasyntactic variable” is that it sounds good. <br><br>
-                    
-                    In other words, if you want to create a file, and the name doesn’t matter, the name is usually “foo”. Once you’ve used “foo”, the next file is called “bar”, the one after that “baz”. Continuations from there vary (“quux” is one common choice), but in many cases three is enough.
-                </div>
-               
-                <p class="lamda">A common pattern when using the command line is changing directories using cd (covered in Chapter 4) and then immediately typing ls to view the contents of the directory. This lets us orient ourselves, and is a good first step toward whatever our next action might be.</p>
+                   Les variables métasyntaxiques sont ainsi nommées parce que (1) ce sont des variables du métalangage utilisé pour parler des programmes, etc. ; (2) ce sont des variables dont les valeurs sont souvent des variables (comme dans des utilisations telles que « la valeur de f(foo,bar) est la somme de foo et bar »). Cependant, il a été suggéré de manière plausible que la véritable raison du terme « variable métasyntaxique » est qu'il sonne bien. <br><br>
+En d'autres termes, si vous souhaitez créer un fichier et que le nom n'a pas d'importance, le nom est généralement « foo ». Une fois que vous avez utilisé « foo », le fichier suivant s'appelle « bar », puis « baz ». Les suites varient (« quux » est un choix courant), mais dans de nombreux cas, trois suffisent.
                 
-                <p class="lamda">One useful ability of ls is support for the wildcard character * (read “star”). For example, to list all files ending in “.txt”, we would type this:</p>
-                <p class="cod">
+</div>
+                <p class="lamda">Une pratique courante lors de l'utilisation de la ligne de commande consiste à changer de répertoire à l'aide de la commande cd (abordée au chapitre 4), puis à taper immédiatement ls pour afficher le contenu du répertoire. Cela nous permet de nous orienter et constitue une bonne première étape vers notre prochaine action, quelle qu'elle soit. </p>
+                <p class="lamda">Une fonctionnalité utile de ls est la prise en charge du caractère générique * (prononcé « étoile »). Par exemple, pour lister tous les fichiers se terminant par « .txt », nous taperions ceci :</p>
+                
+<p class="cod">
                     $ ls *.txt <br>
                     sonnet_1.txt <br>
                     sonnet_1_reversed.txt
                 </p>
-                <p class="lamda">Here *.txt (read “star dot tee-ex-tee”) automatically expands to all the filenames that match the pattern “any string followed by .txt”.</p>
-                <p class="lamba">There are three particularly important optional forms of ls, starting with the “long form”, using the option -l (read “dash-ell”):</p>
+                <p class="lamda">Ici, *.txt (prononcé « étoile point tee-ex-tee ») se développe automatiquement en tous les noms de fichiers qui correspondent au modèle « n'importe quelle chaîne suivie de .txt ». </p>
+                <p class="lamba">Il existe trois formes optionnelles particulièrement importantes de ls, à commencer par la « forme longue », qui utilise l'option -l (lire « tiret-ell ») :</p>
                 
                 
-                <p class="cod">
-                    $ ls -l *.txt <br>
-                    total 16 <br>
-                    -rw-r--r-- 1 mhartl staff  87 Jul 20 18:05 sonnet_1.txt <br>
-                    -rw-r--r-- 1 mhartl staff 294 Jul 21 12:09 sonnet_1_reversed.txt
+<p class="cod">
+$ ls -l *.txt <br>
+total 16 <br>
                     
-                </p>
-                <p class="lamda">For now, you can safely ignore most of the information output by ls -l, but note that the long form lists a date and time indicating the last time the file was modified. The number before the date is the size of the file, in bytes.3</p>
-                <p class="lamda">A second powerful ls variant is “list by reversed time of modification (long format)”, or ls -rtl, which lists the long form of each file or directory in order of how recently it was modified (reversed so that the most recently modified entries appear at the bottom of the screen for easy inspection). This is particularly useful when there are a lot of files in the directory but you really only care about seeing the ones that have been modified recently, such as when confirming a file download. We’ll see an example of this in Section 3.1, but you are free to try it now:</p>
+-rw-r--r-- 1 mhartl staff  87 20 juillet 18:05 sonnet_1.txt <br>
+                    -rw-r--r-- 1 mhartl staff 294 21 juillet 12:09 sonnet_1_reversed.txt
+</p>
+                <p class="lamda">Pour l'instant, vous pouvez ignorer la plupart des informations affichées par ls -l, mais notez que le format long indique la date et l'heure de la dernière modification du fichier. Le nombre avant la date correspond à la taille du fichier, en octets.3</p>
+                <p class="lamda">Une deuxième variante puissante de ls est « list by reversed time of modification (long format) », ou ls -rtl, qui affiche la forme longue de chaque fichier ou répertoire par ordre de modification récente (inversé afin que les entrées les plus récemment modifiées apparaissent en bas de l'écran pour faciliter l'inspection). Cela est particulièrement utile lorsque le répertoire contient beaucoup de fichiers, mais que vous ne souhaitez voir que ceux qui ont été modifiés récemment, par exemple pour vérifier le téléchargement d'un fichier. Nous verrons un exemple de cela dans la section 3.1, mais vous pouvez l'essayer dès maintenant :</p>
                 <p class="cod">
-                    $ ls -rtl <br>
-                    <results system-dependent>
-                </p>
-                <p class="lamda">By the way, -rtl is the commonly used compact form, but you can also pass the options individually, like this:</p>
-                <p class="cod">$ ls -r -t -l</p>
-                <p class="lamda">In addition, their order is irrelevant, so typing ls -trl gives the same result.</p>
-                <h2 id="vin">2.2.1 Hidden files</h2>
-                <p class="lamda">Finally, Unix has the concept of “hidden files (and directories)”, which don’t show up by default when listing files. Hidden files and directories are identified by starting with a dot ., and are commonly used for things like storing user preferences. For example, in Learn Enough Git to Be Dangerous, we’ll create a file called .gitignore that tells a particular program (Git) to ignore files matching certain patterns. As a concrete example, to ignore all files ending in “.txt”, we could do this:</p>
-                <p class="cod">
-                    $ echo "*.txt" > .gitignore <br>
-                    $ cat .gitignore <br>
-                    *.txt
-                </p>
-                <p class="lamda">If we then run ls, the file won’t show up, because it’s hidden:</p>
-                <p class="cod">$ ls <br>
-                    sonnet_1.txt <br>
-                    sonnet_1_reversed.txt
-                </p>
-                <p class="lamda">To get ls to display hidden files and directories, we need to pass it the -a option (for “all”):</p>
-                <p class="cod">
-                    $ ls -a <br>
-                    .           .gitignore      sonnet_1_reversed.txt <br>
-                    ..          sonnet_1.txt
-                </p>
-                <p class="lamda">Now .gitignore shows up, as expected. (We’ll learn what . and .. refer to in Section 4.3.)</p>
-                <h2 id="vinun">2.2.2 Exercises</h2>
-                <p class="exo">1-What’s the command to list all the non-hidden files and directories that start with the letter “s”?</p>
-                <p class="exo">2-What is the command to list all the non-hidden files that contain the string “onnet”, long-form by reverse modification time? Hint: Use the wildcard operator at both the beginning and the end.</p>
-                <p class="exo">3-What is the command to list all files (including hidden ones) by reverse modification time, in long form?</p>
+$ ls -rtl <br>
+<résultats dépendant du système>
+</p>
                 
-
+<p class="lamda">À propos, -rtl est la forme compacte couramment utilisée, mais vous pouvez également passer les options individuellement, comme ceci :</p>
+                <p class="cod">$ ls -r -t -l</p>
+                <p class="lamda">De plus, leur ordre n'a pas d'importance, donc taper ls -trl donne le même résultat.
+                
+<h2 id="vin">2.2.1 Fichiers cachés</h2>
+                <p class="lamda">Enfin, Unix a le concept de « fichiers (et répertoires) cachés », qui n'apparaissent pas par défaut lors du listage des fichiers. Les fichiers et répertoires cachés sont identifiés par un point . au début de leur nom et sont couramment utilisés pour stocker les préférences des utilisateurs, par exemple. Par exemple, dans 643-code Git pour se perfectionner, nous allons créer un fichier appelé .gitignore qui indique à un programme particulier (Git) d'ignorer les fichiers correspondant à certains modèles. Concrètement, pour ignorer tous les fichiers se terminant par « .txt », nous pourrions faire ceci :</p>
+                <p class="cod">
+$ echo « *.txt » > .gitignore <br>
+                    
+$ cat .gitignore <br>
+                    *.txt
+</p>
+<p class="lamda">Si nous exécutons ensuite ls, le fichier n'apparaîtra pas, car il est caché :</p>
+<p class="cod">$ ls <br>
+sonnet_1.txt <br>
+sonnet_1_reversed.txt
+</p>
+                
+<p class="lamda">Pour que ls affiche les fichiers et répertoires cachés, nous devons lui passer l'option -a (pour « all ») :</p>
+                <p class="cod">
+$ ls -a <br>.
+           .gitignore      sonnet_1_reversed.txt <br>
+                    
+..          sonnet_1.txt
+                </p>
+                <p class="lamda">Maintenant, .gitignore s'affiche, comme prévu. (Nous apprendrons ce que signifient . et .. dans la section 4.3.)</p>
+                <h2 id="vinun">2.2.2 Exercices</h2>
+                
+<p class="exo">1-Quelle est la commande permettant de lister tous les fichiers et répertoires non cachés qui commencent par la lettre « s » ?</p>
+                <p class="exo">2-Quelle est la commande permettant de lister tous les fichiers non cachés qui contiennent la chaîne « onnet », sous forme longue et par ordre décroissant de date de modification ?
+ Indice : utilisez l'opérateur générique au début et à la fin. 
+3-Quelle est la commande permettant de lister tous les fichiers (y compris les fichiers cachés) par ordre décroissant de date de modification, en format long ?
+                
 
 
 
@@ -1055,7 +1067,7 @@
                     
                       $ écho $SHELL
                       /bin/bash
-                    Ceci imprime la $SHELL variable d'environnement .Si vous voyez le résultat affiché ci-dessus, indiquant que vous utilisez déjà Bash, vous avez terminé et pouvez continuer le reste du didacticiel.(Dans de rares cas, $SHELLcela peut différer du shell actuel, mais la procédure ci-dessous passera toujours correctement d'un shell à un autre.)L’alerte affichée dans la liste  1.1 peut être ignorée en toute sécurité.Pour plus d'informations, notamment sur la manière de passer à Z Shell et de l'utiliser avec ce didacticiel, consultez l'article de blog Learn Enough « Utilisation de Z Shell sur Mac avec les didacticiels Learn Enough ».
+                    Ceci imprime la $SHELL variable d'environnement .Si vous voyez le résultat affiché ci-dessus, indiquant que vous utilisez déjà Bash, vous avez terminé et pouvez continuer le reste du didacticiel.(Dans de rares cas, $SHELLcela peut différer du shell actuel, mais la procédure ci-dessous passera toujours correctement d'un shell à un autre.)L’alerte affichée dans la liste  1.1 peut être ignorée en toute sécurité.Pour plus d'informations, notamment sur la manière de passer à Z Shell et de l'utiliser avec ce didacticiel, consultez l'article de blog 643-code « Utilisation de Z Shell sur Mac avec les didacticiels 643-code ».
                     
                     L’autre résultat possible echoest le suivant :
                     
@@ -1072,7 +1084,7 @@
                       /bin/bash
                     À ce stade, vous commencerez probablement à voir l’alerte affichée dans la liste  1.1 , que vous devez ignorer.
                     
-                    Notez que la procédure ci-dessus est entièrement réversible, vous n’avez donc pas à craindre d’endommager votre système.Consultez « Utilisation de Z Shell sur Mac avec les didacticiels Learn Enough » pour plus d’informations.
+                    Notez que la procédure ci-dessus est entièrement réversible, vous n’avez donc pas à craindre d’endommager votre système.Consultez « Utilisation de Z Shell sur Mac avec les didacticiels 643-code » pour plus d’informations.
                 </div>
 
                    <p class="lamda">La façon de renommer un fichier est d’utiliser la mvcommande, abréviation de « move » :</p>
@@ -1411,7 +1423,7 @@
                     Sur la plupart des systèmes, appuyer sur Entrée placerait alors la dernière curlcommande après notre invite et nous permettrait de la modifier (si vous le souhaitez) avant d'appuyer sur Entrée pour l'exécuter.Lorsque votre flux de travail implique l’exécution répétée d’une variété de commandes similaires, il peut parfois sembler que « toutes les commandes commencent par ⌃R».
                 </div>
                     <h2 id="vinneuf">3.1.1 Exercices</h2>
-                   <p class="exo">1-Utilisez la commande curl -I https://www.learnenough.com/pour récupérer l' en-tête HTTP du site Web Learn Enough.Quel est le code d’état HTTP de l’adresse ?En quoi cela diffère-t-il du code d’état pour learnenough.com(sans le https://) ?</p>
+                   <p class="exo">1-Utilisez la commande curl -I https://www.learnenough.com/pour récupérer l' en-tête HTTP du site Web 643-code.Quel est le code d’état HTTP de l’adresse ?En quoi cela diffère-t-il du code d’état pour learnenough.com(sans le https://) ?</p>
                    <p class="exo">2-En utilisant ls, confirmez que sonnets.txtexiste sur votre système.Quelle est sa taille en octets ? Astuce : rappelez-vous de la section  2.2 que la « forme longue » de lsaffiche un nombre d’octets.</p>
                    <p class="exo">3-Le nombre d'octets dans l'exercice précédent est suffisamment élevé pour qu'il soit plus naturellement considéré en kilo-octets (souvent traités comme 1 000 octets, mais en réalité égaux à210= 1024
                     octets).En ajoutant l’ -hoption (« lisible par l’homme ») à ls, répertoriez la forme longue du fichier de sonnets avec un nombre d’octets lisible par l’homme.</p>
@@ -1778,16 +1790,16 @@
              Mais je ne vois pas de telles roses sur ses joues ;
              </p>
              <p class="lamda">Nous pouvons voir que l’expression régulière correspond à des chaînes telles que « robs » et « rocks » en plus de « roses ».</p>
-             <p class="lamda">En général, l’un des meilleurs outils pour apprendre à utiliser les expressions régulières est un générateur d’expressions régulières en ligne , tel que regex101 , qui vous permet de créer des expressions régulières de manière interactive ( Figure  3.3 ).Malheureusement, grepil ne prend souvent pas en charge le format précis utilisé par les générateurs d'expressions régulières (y compris les exigences difficiles à deviner pour « échapper » les caractères spéciaux), et la précision dans les expressions régulières est primordiale.Par conséquent, malgré l’origine de son nom, la vérité est que j’utilise rarement les capacités d’expression régulière de grep.Au moment où la situation nécessite des expressions régulières, je suis beaucoup plus susceptible d'utiliser un éditeur de texte ( Learn Enough Text Editor to Be Dangerous ) ou un langage de programmation complet ( Learn Enough JavaScript to Be Dangerous , Learn Enough Ruby to Be Dangerous ).</p>
+             <p class="lamda">En général, l’un des meilleurs outils pour apprendre à utiliser les expressions régulières est un générateur d’expressions régulières en ligne , tel que regex101 , qui vous permet de créer des expressions régulières de manière interactive ( Figure  3.3 ).Malheureusement, grepil ne prend souvent pas en charge le format précis utilisé par les générateurs d'expressions régulières (y compris les exigences difficiles à deviner pour « échapper » les caractères spéciaux), et la précision dans les expressions régulières est primordiale.Par conséquent, malgré l’origine de son nom, la vérité est que j’utilise rarement les capacités d’expression régulière de grep.Au moment où la situation nécessite des expressions régulières, je suis beaucoup plus susceptible d'utiliser un éditeur de texte ( 643-code Text Editor pour se perfectionner ) ou un langage de programmation complet ( 643-code JavaScript pour se perfectionner , 643-code ruby pour se perfectionner ).</p>
             
              <p class="cycle spec"><img src="/ressources/t15.png" alt=""></p>
              <p class="fig">Figure 3.3 : Un générateur d’expressions régulières en ligne .</p>
-             <p class="lamda">Néanmoins, les aspects grepabordés dans cette section sont presque suffisants pour être dangereux , couvrant un grand nombre de cas courants (y compris l'application importante des processus de grepping ( encadré  3.2 )).Nous verrons une dernière grepvariante au chapitre  4 dans le cadre de notre discussion sur les répertoires Unix.</p>
+             <p class="lamda">Néanmoins, les aspects grepabordés dans cette section sont presque suffisants  , couvrant un grand nombre de cas courants (y compris l'application importante des processus de grepping ( encadré  3.2 )).Nous verrons une dernière grepvariante au chapitre  4 dans le cadre de notre discussion sur les répertoires Unix.</p>
              <div class="comment">
                 Encadré 3.2. Processus de grepping
                 L’une des nombreuses utilisations de est le filtrage de la liste des processusgrep Unix pour exécuter des programmes correspondant à une chaîne particulière.(Sur les systèmes de type Unix tels que Linux et macOS, les tâches utilisateur et système se déroulent chacune dans un conteneur bien défini appelé processus .)Ceci est particulièrement utile lorsqu'un processus malveillant sur votre système doit être supprimé.(Une bonne façon de trouver de tels processus est d’exécuter la topcommande, qui affiche les processus consommant le plus de /ressources.)
                 
-                Par exemple, à un moment donné dans le livre Ruby on Rails Tutorial , il est important d'éliminer un programme appelé springde la liste des processus.Pour ce faire, il faut d'abord trouver les processus, et la façon de voir tous les processus de votre système est d'utiliser la pscommande avec les auxoptions :
+                Par exemple, à un moment donné dans le livre ruby Tutorial , il est important d'éliminer un programme appelé springde la liste des processus.Pour ce faire, il faut d'abord trouver les processus, et la façon de voir tous les processus de votre système est d'utiliser la pscommande avec les auxoptions :
                 <p class="cod">
                 $ ps aux
                </p>
@@ -2248,7 +2260,7 @@
                      $ pwd <br>
                     /Users/mhartl/fichiers_texte
                  </p>
-                 <p class="lamda">D'ailleurs, nous sommes maintenant en mesure de comprendre les invites affichées dans la Figure  1.6 : J'ai configuré mon invite pour afficher le répertoire actuel, qui pourrait être quelque chose comme [~], [ruby], ou [projects].(Nous discuterons de la façon de personnaliser l'invite dans Learn Enough Text Editor to Be Dangerous .Les lecteurs particulièrement avides peuvent exercer leur sophistication technique ( encadré  1.4 ) en cherchant sur Google comment procéder .)</p>
+                 <p class="lamda">D'ailleurs, nous sommes maintenant en mesure de comprendre les invites affichées dans la Figure  1.6 : J'ai configuré mon invite pour afficher le répertoire actuel, qui pourrait être quelque chose comme [~], [ruby], ou [projects].(Nous discuterons de la façon de personnaliser l'invite dans 643-code Text Editor pour se perfectionner .Les lecteurs particulièrement avides peuvent exercer leur sophistication technique ( encadré  1.4 ) en cherchant sur Google comment procéder .)</p>
                  <p class="lamda">Étroitement lié à ..« un répertoire vers le haut » est .(lire « point ») qui signifie « le répertoire actuel ».L'utilisation la plus courante de .est lors du déplacement ou de la copie de fichiers vers le répertoire actuel :</p>
                  <p class="cod">
                     $ pwd <br>
@@ -2605,8 +2617,8 @@
              <div class="intro">
                  <h3>Chapitre 4</h3>
                  <h2 id="cquatre">4.6 Conclusion</h2>
-                 <p class="lamda">Félicitations!Vous avez officiellement appris suffisamment de lignes de commande pour être dangereux .Bien sûr, ce n’est qu’une étape d’un voyage plus long, vers l’excellence de la ligne de commande ( encadré  4.3 ) et vers la maîtrise du développement logiciel.Au fur et à mesure que vous avancez dans ce voyage, vous découvrirez probablement qu’apprendre la magie informatique peut être passionnant et stimulant, mais cela peut aussi être difficile .En effet, vous avez peut-être déjà découvert ce fait, soit par vous-même, soit en suivant ce tutoriel.À ces courageux magiciens en formation qui souhaitent continuer, j'offre la séquence suivante :</p>
-                 <button class="btn">Commencer: le chapitre</button>
+                 <p class="lamda">Félicitations!Vous avez officiellement appris suffisamment de lignes de commande  .Bien sûr, ce n’est qu’une étape d’un voyage plus long, vers l’excellence de la ligne de commande ( encadré  4.3 ) et vers la maîtrise du développement logiciel.Au fur et à mesure que vous avancez dans ce voyage, vous découvrirez probablement qu’apprendre la magie informatique peut être passionnant et stimulant, mais cela peut aussi être difficile .En effet, vous avez peut-être déjà découvert ce fait, soit par vous-même, soit en suivant ce tutoriel.À ces courageux magiciens en formation qui souhaitent continuer, j'offre la séquence suivante :</p>
+                 <button class="btn">Bonne chance 💪💪💪  </button> 
              </div>
              
          </div>

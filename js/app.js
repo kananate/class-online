@@ -12,11 +12,11 @@ video.addEventListener('click', togglePlayPause);
 
 function togglePlayPause(){
     if(video.paused){
-        img.src = "ressources/pause.svg";
+        img.src = "../ressources/pause.svg";
         video.play();
     }
     else {
-        img.src = "ressources/play.svg";
+        img.src = "../ressources/play.svg";
         video.pause();
     }
 }
@@ -30,7 +30,7 @@ video.addEventListener('timeupdate', () => {
         juice.style.width = juicePos * 100 + "%";
 
     if(video.ended){
-        img.src = "ressources/play.svg";
+        img.src = "../ressources/play.svg";
     }
 
 })
