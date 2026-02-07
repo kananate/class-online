@@ -535,10 +535,10 @@ En revanche, les éditeurs de texte sont conçus pour modifier du texte brut, l�
                     . <br>
                    . <br>
                    . <br>
-                   drwx------+ 15 mhartl staff 510B 4 sept. 18:58 Bureau <br>
-                   -rw------- 1 mhartl staff 13K 4 sept. 19:13 .viminfo <br>
-                   -rw-r--r-- 1 mhartl staff 46B 4 sept. 19:14 .bashrc <br>
-                   drwxr-xr-x+ 117 mhartl staff 3.9K 4 sept. 19:14 .
+                   drwx------+ 15 kananate staff 510B 4 sept. 18:58 Bureau <br>
+                   -rw------- 1 kananate staff 13K 4 sept. 19:13 .viminfo <br>
+                   -rw-r--r-- 1 kananate staff 46B 4 sept. 19:14 .bashrc <br>
+                   drwxr-xr-x+ 117 kananate staff 3.9K 4 sept. 19:14 .
 
                   </p>
                   <p class="lamda">Au fait, le .bashrcfichier est sourcé automatiquement lorsque nous ouvrons un nouvel onglet ou une nouvelle fenêtre de terminal, donc un sourçage explicite n'est nécessaire que lorsque nous voulons qu'une modification soit reflétée dans le terminal actuel .</p>
@@ -1468,7 +1468,7 @@ end
                  
 <p class="cod">
                     Listing 2.5 : L'invite de commande par défaut sur mon système. <br>
-MacBook-Air:~ mhartl$
+MacBook-Air:~ kananate$
 </p>
 <p class="cod">
 Listing 2.6 : Mon invite de commande préférée, plus compacte. <br>
@@ -2098,7 +2098,7 @@ $ subl ekill
                     $ echo $PATH
                  </p>
                  <p class="lamda">Si ~/bin figure dans la liste, vous pouvez ignorer cette étape, mais il n'y a aucun inconvénient à la suivre. </p>
-                 <p class="lamda">Remarque : le répertoire littéral ~/bin n'apparaîtra pas dans la liste $PATH ; à la place, le tilde sera remplacé par votre répertoire personnel. Pour moi, ~/bin est identique à /Users/mhartl/bin, c'est donc ce qui apparaît dans mon PATH, mais ce sera différent pour vous. </p>
+                 <p class="lamda">Remarque : le répertoire littéral ~/bin n'apparaîtra pas dans la liste $PATH ; à la place, le tilde sera remplacé par votre répertoire personnel. Pour moi, ~/bin est identique à /Users/kananate/bin, c'est donc ce qui apparaît dans mon PATH, mais ce sera différent pour vous. </p>
                  <p class="lamda">Pour nous assurer que ~/bin se trouve dans le chemin, nous allons modifier le fichier de profil Bash, qui est lié au fichier .bashrc que nous avons vu dans la section 1.3. Ouvrez ~/.bash_profile comme suit :</p>
                 
 <p class="cod">$ subl ~/.bash_profile</p>
@@ -2124,7 +2124,7 @@ $ subl ekill
                  <p class="lamda">(Cette commande est décrite dans 643-code Command Line .) Le résultat devrait être le chemin complet vers ekill, qui sur mon système ressemble à ceci :</p>
                  <p class="cod">$ which ekill <br>
                     
-/Users/mhartl/bin/ekill</p>
+/Users/kananate/bin/ekill</p>
                 <p class="lamda">Sur certains systèmes, l'exécution de source sur .bash_profile peut ne pas suffire pour placer ekill dans le chemin d'accès. Si la commande which ekill ne renvoie aucun résultat, essayez de quitter et de redémarrer le programme shell pour recharger les paramètres.
                 <p class="lamda">Comme vous pouvez le constater en tapant ekill seul dans la ligne de commande, le comportement actuel prête à confusion si nous négligeons d'inclure un identifiant de processus :</p>
                  

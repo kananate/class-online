@@ -197,7 +197,7 @@
                  <div class="comment">Encadré 1.2. Quelle est l'invite ? <br>
                     Chaque ligne de commande commence par un ou plusieurs symboles conçus pour vous « inciter » à agir.L'invite se termine généralement par un signe dollar  $ou un signe de pourcentage  %et est précédée d'informations qui dépendent des détails de votre système.Par exemple, sur certains systèmes, l’invite peut ressembler à ceci :
                     <br>
-                    <p class="cod"> Le MacBook Air de Michael :~ mhartl$ </p>   <br>
+                    <p class="cod"> Le MacBook Air de Michael :~ kananate$ </p>   <br>
                     Dans la figure  1.4 , l’invite ressemble plutôt à ceci : <br>
                     <p class="cod"> 
                     [~]$ </p> <br>
@@ -969,8 +969,8 @@ En d'autres termes, si vous souhaitez créer un fichier et que le nom n'a pas d'
 $ ls -l *.txt <br>
 total 16 <br>
                     
--rw-r--r-- 1 mhartl staff  87 20 juillet 18:05 sonnet_1.txt <br>
-                    -rw-r--r-- 1 mhartl staff 294 21 juillet 12:09 sonnet_1_reversed.txt
+-rw-r--r-- 1 kananate staff  87 20 juillet 18:05 sonnet_1.txt <br>
+                    -rw-r--r-- 1 kananate staff 294 21 juillet 12:09 sonnet_1_reversed.txt
 </p>
                 <p class="lamda">Pour l'instant, vous pouvez ignorer la plupart des informations affichées par ls -l, mais notez que le format long indique la date et l'heure de la dernière modification du fichier. Le nombre avant la date correspond à la taille du fichier, en octets.3</p>
                 <p class="lamda">Une deuxième variante puissante de ls est « list by reversed time of modification (long format) », ou ls -rtl, qui affiche la forme longue de chaque fichier ou répertoire par ordre de modification récente (inversé afin que les entrées les plus récemment modifiées apparaissent en bas de l'écran pour faciliter l'inspection). Cela est particulièrement utile lorsque le répertoire contient beaucoup de fichiers, mais que vous ne souhaitez voir que ceux qui ont été modifiés récemment, par exemple pour vérifier le téléchargement d'un fichier. Nous verrons un exemple de cela dans la section 3.1, mais vous pouvez l'essayer dès maintenant :</p>
@@ -2044,15 +2044,15 @@ $ ls -a <br>.
                  <h2 id="qdeux">4.1 Structure du répertoire</h2>
 
                 <p class="lamda">La structure des répertoires de style Unix est généralement indiquée à l'aide d'une liste de noms de répertoires séparés par des barres obliques, que nous pouvons combiner avec la lscommande ( Section  2.2 ) comme ceci :</p>
-                <p class="cod">$ ls /Utilisateurs/mhartl/ruby</p>
+                <p class="cod">$ ls /Utilisateurs/kananate/ruby</p>
                 <p class="lamda">ou comme ça :</p>
                 <p class="cod">$ ls /usr/local/bin</p>
-                <p class="lamda">Comme le montre la figure  4.1 , ces représentations correspondent à des répertoires dans un système de fichiers hiérarchique, avec (par exemple) mhartlun sous-répertoire de Userset rubyun sous-répertoire de mhartl.</p>
+                <p class="lamda">Comme le montre la figure  4.1 , ces représentations correspondent à des répertoires dans un système de fichiers hiérarchique, avec (par exemple) kananateun sous-répertoire de Userset rubyun sous-répertoire de kananate.</p>
 
                 <p class="cycle spec"><img src="/ressources/t16.png" alt=""></p>
                 <p class="fig">Figure 4.1 : La correspondance entre les dossiers et les répertoires.</p>
-                <p class="lamda">Les conventions varient lorsqu'on parle de répertoires : un répertoire utilisateur comme /Users/mhartlserait probablement lu comme « slash users slash mhartl » ou « slash users mhartl », alors que l'omission de la barre oblique initiale dans le langage parlé est courante pour les répertoires système tels que /usr/local/bin, qui seraient probablement prononcés « user local bin ». 1Étant donné que tous les répertoires Unix sont en fin de compte des sous-répertoires du répertoire racine / (prononcé « slash »), les barres obliques de début et de fin sont implicites. Remarque : désigner les barres obliques par erreur comme des « barres obliques inverses » est une source de souffrance intense et doit être strictement évité.</p>
-                <p class="lamda">Le répertoire le plus important pour un utilisateur particulier est le répertoire personnel , qui sur mon système macOS est /Users/mhartl, correspondant à mon nom d'utilisateur ( mhartl).Le répertoire personnel peut être spécifié sous la forme d'un chemin absolu , comme dans /Users/mhartl, ou en utilisant le raccourci pour le répertoire personnel, le caractère tilde  ~(qui est tapé à l'aide de Maj-backtick, situé juste à gauche du chiffre 1 sur la plupart des claviers).Par conséquent, les deux chemins représentés dans la figure  4.1 sont identiques : /Users/mhartl/ruby/projectsest identique à ~/ruby/projects.(Il est amusant de constater que la raison pour laquelle le caractère tilde est utilisé pour le répertoire personnel est simplement que la touche « Accueil » était la même que la touche permettant de produire « ~ » sur certains des premiers claviers .)</p>
+                <p class="lamda">Les conventions varient lorsqu'on parle de répertoires : un répertoire utilisateur comme /Users/kananateserait probablement lu comme « slash users slash kananate » ou « slash users kananate », alors que l'omission de la barre oblique initiale dans le langage parlé est courante pour les répertoires système tels que /usr/local/bin, qui seraient probablement prononcés « user local bin ». 1Étant donné que tous les répertoires Unix sont en fin de compte des sous-répertoires du répertoire racine / (prononcé « slash »), les barres obliques de début et de fin sont implicites. Remarque : désigner les barres obliques par erreur comme des « barres obliques inverses » est une source de souffrance intense et doit être strictement évité.</p>
+                <p class="lamda">Le répertoire le plus important pour un utilisateur particulier est le répertoire personnel , qui sur mon système macOS est /Users/kananate, correspondant à mon nom d'utilisateur ( kananate).Le répertoire personnel peut être spécifié sous la forme d'un chemin absolu , comme dans /Users/kananate, ou en utilisant le raccourci pour le répertoire personnel, le caractère tilde  ~(qui est tapé à l'aide de Maj-backtick, situé juste à gauche du chiffre 1 sur la plupart des claviers).Par conséquent, les deux chemins représentés dans la figure  4.1 sont identiques : /Users/kananate/ruby/projectsest identique à ~/ruby/projects.(Il est amusant de constater que la raison pour laquelle le caractère tilde est utilisé pour le répertoire personnel est simplement que la touche « Accueil » était la même que la touche permettant de produire « ~ » sur certains des premiers claviers .)</p>
                 <p class="lamda">En plus des répertoires utilisateurs, chaque système Unix dispose de répertoires système pour les programmes essentiels au fonctionnement normal de l'ordinateur.La modification des fichiers ou des répertoires système nécessite des pouvoirs spéciaux accordés uniquement au superutilisateur , appelé root.(Cette utilisation de « root » n’est pas liée au « répertoire racine » mentionné ci-dessus.)Le superutilisateur est si puissant qu'il est considéré comme une mauvaise pratique de se connecter en tant que root; à la place, les tâches exécutées en tant rootque devraient généralement utiliser la sudocommande ( Encadré  4.1 ).</p>
                 <div class="comment">
                     Encadré 4.1. « sudoFais-moi un sandwich. » <br>
@@ -2150,7 +2150,7 @@ $ ls -a <br>.
                  <p class="lamda">Cette utilisation est particulièrement courante avec l' -loption ( Section  2.2 ) :</p>
                  <p class="cod">
                     $ ls -ld text_files/ <br>
-                    drwxr-xr-x 7 mhartl staff 238 24 juil. 18:07 text_files
+                    drwxr-xr-x 7 kananate staff 238 24 juil. 18:07 text_files
                  </p>
                  <p class="lamda">Enfin, nous pouvons changer de répertoire en utilisant cd:</p>
                  <p class="cod">$ cd fichiers_texte/</p>
@@ -2161,11 +2161,11 @@ $ ls -a <br>.
                  </p>
                  <p class="cod">
                     $ pwd <br>
-                    /Users/mhartl/text_files <br>
+                    /Users/kananate/text_files <br>
                     $ ls <br>
                      sonnet_1.txt sonnet_1_reversed.txt sonnets.txt
                  </p>
-                 <p class="lamda">Ces dernières étapes de saisie pwdpour vérifier le répertoire, et surtout d'exécution lspour inspecter le contenu du répertoire, sont une question d'habitude pour de nombreux vétérans grisonnants de la ligne de commande.(Votre résultat pwdsera bien sûr différent, à moins que vous n'utilisiez le nom d'utilisateur « mhartl » sur macOS.)
+                 <p class="lamda">Ces dernières étapes de saisie pwdpour vérifier le répertoire, et surtout d'exécution lspour inspecter le contenu du répertoire, sont une question d'habitude pour de nombreux vétérans grisonnants de la ligne de commande.(Votre résultat pwdsera bien sûr différent, à moins que vous n'utilisiez le nom d'utilisateur « kananate » sur macOS.)
 
                  </p>
                  <h2 id="qcinq">4.2.1 Exercices</h2>
@@ -2223,19 +2223,19 @@ $ ls -a <br>.
                  
                  <p class="cod">
                     $ pwd <br>
-                    /Utilisateurs/mhartl/fichiers_texte <br>
+                    /Utilisateurs/kananate/fichiers_texte <br>
                     $ cd .. <br>
                      $ pwd  <br>
-                    /Utilisateurs/mhartl
+                    /Utilisateurs/kananate
                  </p>
-                 <p class="lamda">Dans ce cas, comme /Users/mhartlc'est mon répertoire personnel , nous aurions pu réaliser la même chose en utilisant cdlui-même :</p>
+                 <p class="lamda">Dans ce cas, comme /Users/kananatec'est mon répertoire personnel , nous aurions pu réaliser la même chose en utilisant cdlui-même :</p>
                  <p class="cod">
                     $ cd fichiers_texte/ <br>
                     $ pwd <br>
-                   /Utilisateurs/mhartl/fichiers_texte <br>
+                   /Utilisateurs/kananate/fichiers_texte <br>
                    $ cd <br>
                    $ pwd  <br>
-                   /Utilisateurs/mhartl
+                   /Utilisateurs/kananate
                  </p>
                  <p class="lamda">La raison pour laquelle cela fonctionne est que cdcela change automatiquement le répertoire personnel de l'utilisateur, où qu'il se trouve.Cela signifie que</p>
                  <p class="cod">$ cd</p>
@@ -2248,23 +2248,23 @@ $ ls -a <br>.
                  </p>
                  <p class="cod">
                     $ pwd <br>
-                    /Users/mhartl  <br>
+                    /Users/kananate  <br>
                     $ mkdir second_directory <br>
                      $ cd second_directory/
                  </p>
                  <p class="lamda">Maintenant, si nous voulons changer de text_filesrépertoire, nous pouvons cdle faire text_filesvia le répertoire personnel  ~:</p>
                  <p class="cod">
                     $ pwd <br>
-                    /Users/mhartl/second_répertoire <br>
+                    /Users/kananate/second_répertoire <br>
                     $ cd ~/fichiers_texte <br>
                      $ pwd <br>
-                    /Users/mhartl/fichiers_texte
+                    /Users/kananate/fichiers_texte
                  </p>
                  <p class="lamda">D'ailleurs, nous sommes maintenant en mesure de comprendre les invites affichées dans la Figure  1.6 : J'ai configuré mon invite pour afficher le répertoire actuel, qui pourrait être quelque chose comme [~], [ruby], ou [projects].(Nous discuterons de la façon de personnaliser l'invite dans 643-code Text Editor pour se perfectionner .Les lecteurs particulièrement avides peuvent exercer leur sophistication technique ( encadré  1.4 ) en cherchant sur Google comment procéder .)</p>
                  <p class="lamda">Étroitement lié à ..« un répertoire vers le haut » est .(lire « point ») qui signifie « le répertoire actuel ».L'utilisation la plus courante de .est lors du déplacement ou de la copie de fichiers vers le répertoire actuel :</p>
                  <p class="cod">
                     $ pwd <br>
-                    /Utilisateurs/mhartl/fichiers_texte <br>
+                    /Utilisateurs/kananate/fichiers_texte <br>
                     $ cd ~/second_répertoire <br>
                      $ ls <br>
                      $ cp ~/fichiers_texte/sonnets.txt . <br>
@@ -2288,12 +2288,12 @@ $ ls -a <br>.
                  <p class="lamda">Une dernière commande de navigation, et l'une de mes préférées, est cd -, qui cdrenvoie au répertoire précédent , où qu'il se trouve :</p>
                  <p class="cod">
                     $ pwd <br>
-                    /Users/mhartl/second_directory <br>
+                    /Users/kananate/second_directory <br>
                     $ cd ~/fichiers_texte <br>
                      $ pwd <br>
-                    /Users/mhartl/fichiers_texte <br>
+                    /Users/kananate/fichiers_texte <br>
                     $ cd - <br>
-                     /Users/mhartl/second_directory
+                     /Users/kananate/second_directory
                  </p>
                  <p class="lamda">Je trouve que cela cd -est particulièrement utile lors de la combinaison de commandes, comme décrit dans l'encadré  4.2 .</p>
                  <div class="comment">
