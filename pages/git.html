@@ -65,11 +65,9 @@ Avant cela, il n'y a rien.
 
 La première fois, le premier commit contiendra donc toutes les informations. <br> <br>
 
-Maintenant, lorsque nous parlons du prochain commit, supposons que nous ayons créé cette page d'index.
+Maintenant, lorsque nous parlons du prochain commit, 
 
-La prochaine étape consiste à mettre à jour notre page d'index et à créer également
-
-about ou contact.
+La prochaine étape consiste à ajout du texte a la page d'index.
 
 Ainsi, lorsque nous créons notre deuxième commit, nous conservons essentiellement toutes les nouvelles modifications, c'est-à-dire les modifications effectuées
 
@@ -79,19 +77,19 @@ Dans le premier commit, nous avons dit : « OK, nous avons créé index.HTML ».
 
 Dans le deuxième commit, nous mentionnons toutes les modifications.
 
-Nous mentionnons donc la modification que nous avons apportée à notre index et nous mentionnons également que nous avons créé
-
-une page « about ».
+Nous mentionnons donc la modification que nous avons apportée à notre index .
 
 De plus, cela est suivi  d'un identifiant de commit unique. <br> <br>
 
-Vous voyez maintenant cette flèche, vous voyez cette flèche en particulier.
+Vous voyez maintenant cette flèche, vous voyez cette flèche en particulier. <br>
 
 Pourquoi ?
-
+<br>
 Parce que ce commit ne contient pas toutes les informations.
 
-Ce commit ne contient que les nouvelles modifications pour obtenir les informations précédentes.
+Ce commit ne contient que les nouvelles modifications <br>
+
+pour obtenir les informations précédentes.
 
 Il est lié au commit précédent.
 
@@ -105,30 +103,30 @@ mais encore une fois ne vous inquiétez pas, nous allons en discuter encore et e
 
 Maintenant.
 
-Nous avons créé un nouveau commit dans lequel nous avons à nouveau mis à jour notre index.
+Nous avons créé un 3e commit dans lequel nous avons à nouveau mis à jour notre index.
+en ajoutant un titre de niveau 1
 
-Celui-ci va donc contenir les informations ou les modifications après le commit précédent et nous pouvons le suivre
+
+Celui-ci va donc contenir les informations ou les modifications après le commit 2 et nous pouvons le suivre
 
 à l'aide d'un identifiant de commit unique.
 
-Et le plus important, c'est qu'il est connecté au commit précédent.
+Et le plus important, c'est qu'il est connecté au commit 2.
 
-Donc, cet identifiant de commit ne contient que les informations relatives à la mise à jour de notre index.
+Donc, cet identifiant de commit ne contient que les informations relatives à l'ajout du titre de niveau 1 ds notre index.
 
 Il est connecté au précédent.
 
-Nous avons donc également des informations sur la mise à jour de notre index effectuée précédemment.
+Nous avons donc également des informations sur la mise à jour effectuer au commit 2.
 
-Et nous avons également un fichier about.html qui, puisqu'il est connecté au commit précédent, contient également des informations
-
-à ce sujet. <br>
+<br>
 
 
 
 
 De cette façon, chaque commit ne va pas stocker toutes les informations.
 
-Ils ne stockeront que les modifications.
+Ils ne stockeront que c propres modifications.
 
 Sinon, imaginez que je parle d'un grand projet comme developper une app com Netflix, ou ils ont
 
@@ -136,9 +134,6 @@ Sinon, imaginez que je parle d'un grand projet comme developper une app com Netf
 
 Par exemple, supposons que le commit initial que nous avons effectué était d'environ dix Mo pour le fichier initial de la page  index.html
 
-ou le projet initial que nous avons ajouté.
-
-Le premier commit que nous avons ajouté faisait dix Mo.
 
 Le commit suivant ne fait pas dix Mo ni plus.
 
@@ -150,15 +145,14 @@ un fichier, donc cela peut faire dix Ko, ou nous avons peut-être simplement mod
 
 Il s'agira donc d'une petite modification.
 
-Et puis, nous avons peut-être simplement mis à jour notre index.
 
-Nous avons simplement changé une lettre ou peut-être un fichier, 10 000 lignes de code, 5 000 lignes de code.
+donc si on change une lettre ou peut-être un fichier, 10 000 lignes de code, 5 000 lignes de code.
 
 En conséquence, la modification ne contiendra que ces informations.
 
-Cela peut donc représenter 100 Ko, voire plus.
+Cela peut donc représenter 100 Ko, voire plus. <br>
 
-Mais je vous donne simplement un exemple pour montrer que chaque commit ne stocke pas l'intégralité du code, d'une certaine manière, nous continuons simplement à
+Tous ces exemples pour montrer que chaque commit ne stocke pas l'intégralité du code, d'une certaine manière, nous continuons simplement à
 
 stocker toutes les modifications et comme toutes les modifications
 
@@ -192,15 +186,7 @@ Et ils n'ont pas de flèche.
 
 Ne vous inquiétez donc pas si vous voyez cela, cela signifie que ce sera la première, la deuxième et la troisième comète etc...
 
-Celle-ci est reliée à la précédente, celle-ci est reliée à la précédente.
-
-De même, si vous voyez quelque chose comme ceci.
-
-Donc, c'est un, deux, trois ainsi de suite
-
-Cela signifie que ceci est connecté au précédent.
-
-Ceci est connecté au précédent.
+cela montre que chaque commit est  connecté à la précédente
 
 Nous dessinons généralement des flèches juste pour vous montrer.
 
@@ -218,21 +204,21 @@ Maintenant, laissez-moi vous parler de l'exemple pratique lui-même, uniquement 
 
 Si je passe ici, voici le premier commit que nous avons effectué.
 
-Si j'ouvre ce commit, vous voyez que nous avons l'ID de hachage D662183.
+Si j'ouvre ce commit, vous voyez que nous avons l'ID de hachage c300fdd
 
-Si je passe à nouveau ici, D662183.
 
 Il s'agit des sept premiers caractères, comme je l'ai mentionné.
 
-Si j'ouvre ce commit particulier, vous verrez qu'il s'agit de l'ID complet. Les premiers caractères
 
-nous aident donc à déterminer qu'il s'agit bien du commit que nous suivons.
+ils nous aident donc à déterminer qu'il s'agit bien du commit que nous suivons et à faciliter nos # opérations.
 
 Sinon, si je devais travailler avec l'ID complet à chaque fois, ce serait un peu compliqué à gérer,
 
 pour être honnête. et le but d'apprendre git c'est pas de trebucher avec nos pantouffles mais de simplifier la marche
 
-Il est plus facile de suivre les sept premiers caractères que de travailler avec le hachage complet.
+Il est plus facile de suivre les sept premiers caractères que de travailler avec le hachage complet. <br>
+
+exemple git show xxxxxxx <br> <br>
 
 Si vous remarquez également que nous n'avons aucun parent, cela signifie qu'il s'agit du premier commit.
 
@@ -253,7 +239,7 @@ la suppression et l'ajout.
 J'espère que vous avez compris l'idée.
 
 
-Super.
+cool.
 
 C'est ainsi que toute la séquence est suivie et qu'ils contiennent tous de nouvelles modifications.
 
@@ -275,7 +261,7 @@ Nous aurons le nouveau commit et il aura son propre ID de commit unique.
 
 Nous pouvons ajouter un message, puis nous arriverons ici.
 
-Il contiendra toutes les nouvelles modifications. <br>
+Il contiendra toutes les nouvelles modifications. <br> <br>
 
 
 
@@ -300,17 +286,14 @@ j'atteindrai ce commit particulier et que tout mon environnement ressemblera à 
 
 position particulière, vous vous souvenez ?
 
-Donc, si je déplace ma tête vers cet ID de commit particulier, j'aurai notre index dot HTML, c'est tout.
+Donc, si je déplace ma tête vers cet ID de commit particulier, j'aurai notre index.HTML, c'est tout.
 
 Nous n'aurons rien d'autre.
 
-Tout cela ne sera pas visible parce que ma tête est ici.
+Tout le reste ne sera pas visible parce que ma tête est ici.
 
 La tête signifie essentiellement votre position actuelle.
 
-Ce que vous voyez en ce moment.
-
-Vous devez simplement comprendre comment fonctionne la comite.
 
 J'espère que vous comprenez maintenant comment fonctionne l'ensemble de la chronologie des Commit et ce qui se passe réellement en coulisses grâce a cette chronologie. <br> <br>
 
@@ -340,9 +323,9 @@ informations vers GitHub, Bitbucket ou tout autre référentiel distant.
 
 Assurez-vous donc de bien comprendre que nous envoyons ou copions simplement ces informations du local vers le online.
 
+<br><br>
 
-
-Bon, au départ, mon projet fait 10 Mo.
+Bon supposons, au départ, mon projet fait 10 Mo.
 
 La première fois que j'ai tout créé, j'ai ajouté toutes les images, j'ai tout fait.
 
@@ -358,7 +341,7 @@ C'est la raison pour laquelle nous ne stockons que les modifications, afin de ne
 
 Car toutes les informations précédentes sont déjà copiées.
 
-inutile les copier encore et encore ce qui favorise un gain de stock et une vitesse dans l'éxécution des taches
+inutile de les copier encore et encore ce qui favorise un gain de stock et une vitesse dans l'éxécution des taches
 
  En général, les images sont stockées différemment, mais je voulais juste vous donner une idée du fait que nous envoyons uniquement
 
@@ -368,7 +351,7 @@ Sinon, imaginez devoir envoyer tous les fichiers encore et encore ou stocker tou
 
 Cela poserait un problème pour nous localement, imaginez les serveurs distants qui devraient les stocker
 
-encore et encore ces milliards de modifications des millions de developpeurs du monde entier, ces serveurs vont devenirs mabouls.
+encore et encore ces milliards de modifications de millions de developpeurs du monde entier, ces serveurs vont devenirs completement mabouls.
 
 Raison pour laquelle  nous stockons simplement les différences. <br> <br>
 
@@ -380,15 +363,15 @@ autres branches, ce que nous ferons à l'avenir.
 
 Elles auront donc quelque chose qui leur est propre.
 
-Elles créeront leur propre chronologie, où elles auront leur propre engagement et où les choses seront différentes
-
-pour elles.
+Elles créeront leur propre chronologie, où elles auront leur propre commit .
 
 Cela signifie que celle-ci est la principale.
 
 Nous pouvons créer une chronologie secondaire, nous pouvons créer une autre chronologie, voire plusieurs autres, et cela dépend entièrement
 
 de nous du nombre de branches avec lesquelles nous voulons travailler.
+
+le projet a l'instar est un arbre avec c nombreuses ramifications
 
 Par exemple, certains grands projets comportent 50 ou 100 branches.
 
@@ -400,7 +383,7 @@ Mais j'espère que vous avez compris l'idée, l'idée de base, comment les chose
 
 J'espère que cette leçon vous a été utile.
 
-Ne vous inquiétez pas, ne vous stressez pas.
+Ne vous inquiétez surtout pas, ne vous stressez pas.
 
 Je voulais juste vous donner un aperçu des coulisses, comment les choses fonctionnent avec tout ce qui concerne les commits.
 
